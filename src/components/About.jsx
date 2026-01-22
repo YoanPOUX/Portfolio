@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section id="about" className="py-16 max-w-5xl mx-auto px-6">
-      <h2 className="text-2xl font-bold mb-4">À propos de moi</h2>
-      <p className="text-gray-600 leading-relaxed">
+    <section id="about">
+      <h2>À propos de moi</h2>
+      <p>
         Je m’appelle Yoan Poux--Bories, étudiant en informatique en BUT.
         Je me spécialise dans le développement d’applications.
         Lors de mes projets scolaires, de mon stage et de mon alternance,

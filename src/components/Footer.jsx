@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-6 text-center text-sm text-gray-500">
+    <footer>
       © {new Date().getFullYear()} Yoan POUX--BORIES — Portfolio
     </footer>
   );
