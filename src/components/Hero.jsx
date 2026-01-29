@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="buttons">
         <Link to="/projects" className="secondary">Voir mes projets</Link>
         <Link to="/skills" className="secondary">Voir mes compétences</Link>
-        <a href="/cv.pdf" className="primary" target="_blank">Télécharger CV</a>
+        <a href="/CV_POUX--BORIES_Yoan.pdf" className="primary" target="_blank">Télécharger CV</a>
       </div>
     </section>
   );
