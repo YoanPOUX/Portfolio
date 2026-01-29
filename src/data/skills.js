@@ -26,7 +26,7 @@ const skills = [
   {
     title: "Conduite de projet",
     description: "Analyse des besoins métiers, échanges clients et suivi de projet. Application d'une démarche rigoureuse pour répondre aux attentes des utilisateurs finaux.",
-    tools: "Méthodes agiles, communication",
+    tools: "Méthodes agiles, Communication",
     color: "#1d2f6d" // Bleu Marine (Conduire)
   },
   {

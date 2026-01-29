@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
+import FaviconSwitcher from "./components/FaviconSwitcher";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProjectsPage from "./pages/Projects";
@@ -12,6 +13,7 @@ export default function App() {
     <div>
       <Navbar />
       <ScrollToTop />
+      <FaviconSwitcher />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectsPage />} />
