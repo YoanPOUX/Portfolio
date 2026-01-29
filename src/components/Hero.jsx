@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section id="home">
@@ -6,8 +8,9 @@ export default function Hero() {
       <p>Développeur d’applications</p>
       <p>Étudiant en informatique passionné par le développement logiciel et web. J’aime concevoir des solutions concrètes et utiles, du besoin jusqu’à la mise en production.</p>
       <div className="buttons">
-        <a href="#projects" className="primary">Voir mes projets</a>
-        <a href="/cv.pdf" className="secondary" target="_blank">Télécharger CV</a>
+        <Link to="/projects" className="secondary">Voir mes projets</Link>
+        <Link to="/skills" className="secondary">Voir mes compétences</Link>
+        <a href="/cv.pdf" className="primary" target="_blank">Télécharger CV</a>
       </div>
     </section>
   );

@@ -10,7 +10,8 @@ export default function Contact() {
         <button type="submit">Envoyer</button>
       </form>
       <p style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '1rem' }}>
-        Email : yoan.pouxbories@gmail.com
+        Email : yoan.pouxbories@gmail.com <br/>
+        Téléphone : +33 6 70 78 41 98
       </p>
     </section>
   );
