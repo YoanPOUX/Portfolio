@@ -21,7 +21,7 @@ export function Section({
       <div>
         <p aria-hidden="true" className="font-serif text-[64px] leading-none text-accent italic">
           {number}
-        </p>
+        </p>{" "}
         <h2
           id={`${id}-label`}
           className="mt-3 text-[13px] font-bold tracking-[0.08em] text-muted uppercase"

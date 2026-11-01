@@ -107,8 +107,8 @@
       },
       {
         "tag": "IUT Paul Sabatier · 2023–2026",
-        "title": "Bachelor's in",
-        "titleEm": "computer science (BUT)",
+        "title": "BUT",
+        "titleEm": "(3-year Bachelor's in Computer Science)",
         "entries": [
           {
             "label": "Year 3 · work-study · 1 year",
@@ -131,7 +131,7 @@
           },
           {
             "label": "End of year 2 · internship · 3 months",
-            "title": "Developer · Spherea Tests et Services (aerospace)",
+            "title": "Developer · Spherea Tests et Services (aeronautics)",
             "text": "Built software that parses CSV files to support FIDES calculations. FIDES is a methodology for calculating the reliability of electronic equipment.",
             "tech": "Python · PyQt6 · SQL · pywin32"
           },

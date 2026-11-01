@@ -83,7 +83,7 @@ export function Freelance({ dict }: { dict: Dictionary }) {
               >
                 <span aria-hidden="true" className="font-serif text-2xl leading-none text-accent italic">
                   {i + 1}
-                </span>
+                </span>{" "}
                 <span>{step}</span>
               </li>
             ))}

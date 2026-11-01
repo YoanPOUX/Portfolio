@@ -22,7 +22,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
             {hero.eyebrow}
           </p>
           <h1 className="mt-10 font-serif leading-[0.9] font-normal text-ink md:mt-24">
-            <span className="block text-[clamp(56px,10vw,128px)]">{hero.firstName}</span>
+            <span className="block text-[clamp(56px,10vw,128px)]">{hero.firstName}</span>{" "}
             <span className="mark mt-1 inline-block rounded-[14px] px-[0.12em] pt-[0.08em] pb-[0.12em] text-[clamp(52px,9.4vw,128px)] italic">
               {hero.lastName}
             </span>
@@ -65,7 +65,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
               >
                 <span className="font-serif text-2xl font-normal text-accent italic">
                   {String(i + 2).padStart(2, "0")}
-                </span>
+                </span>{" "}
                 <span className="group-hover:text-accent">{item.label}</span>
               </a>
             </li>
