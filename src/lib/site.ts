@@ -1,6 +1,6 @@
 // Public contact details. Phone number and postal address are never displayed.
 export const contact = {
-  email: "yoan.pouxbories@gmail.com",
+  email: "ypbsolutions31@gmail.com",
   linkedin: "https://www.linkedin.com/in/yoan-poux-bories/",
   github: "https://github.com/YoanPOUX",
 };

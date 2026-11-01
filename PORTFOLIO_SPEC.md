@@ -110,7 +110,7 @@ Section sobre, séparée du reste. Elle détaille le **setting DM Instagram**. *
 Option à trancher plus tard : une ligne discrète sur les jobs étudiants (SNCF, Au Vide Grenier) pour appuyer l'aisance client. Par défaut : ne pas les afficher.
 
 ### 4.7 Contact
-- Email : yoan.pouxbories@gmail.com
+- Email : ypbsolutions31@gmail.com
 - LinkedIn et GitHub : **[À COMPLÉTER : URLs]**
 - Formulaire de contact simple (champs : nom, email, type de demande, message). Le type de demande permet de distinguer développement, setting DM et autre.
 - **Ne PAS afficher le numéro de téléphone ni l'adresse postale**, présents sur les CV, pour ne pas exposer des données personnelles sur un site public.
