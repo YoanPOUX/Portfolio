@@ -61,6 +61,8 @@ export default async function RootLayout({
     <html
       lang={lang}
       className={`${instrumentSerif.variable} ${jakarta.variable}`}
+      // Lets Next.js turn off smooth scrolling during route changes (keeps it for anchors).
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
       <head>
