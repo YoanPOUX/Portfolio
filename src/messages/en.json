@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Yoan Poux--Bories · Freelance web and mobile developer",
+    "description": "Freelance web and mobile developer, freelance Instagram DM setter, and computer engineering student in a work-study program (Odoo ERP integration).",
+    "ogLocale": "en_US"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "languageSwitch": "Language",
+    "themeToDark": "Switch to dark theme",
+    "themeToLight": "Switch to light theme",
+    "summary": "Contents"
+  },
+  "nav": {
+    "freelance": "Freelance",
+    "journey": "Background",
+    "skills": "Skills",
+    "other": "Other work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Freelance · DM setter · Engineering student",
+    "firstName": "Yoan",
+    "lastName": "Poux--Bories",
+    "photoAlt": "Portrait of Yoan Poux--Bories",
+    "tagline": "Freelance web and mobile developer, freelance Instagram DM setter, and computer engineering student in a work-study program (Odoo ERP integration).",
+    "ctaContact": "Contact me",
+    "ctaJourney": "See my background"
+  },
+  "sections": {
+    "whatIDo": "What I do",
+    "freelance": "Freelance",
+    "journey": "Background and missions",
+    "skills": "Skills",
+    "other": "Other work",
+    "contact": "Contact"
+  },
+  "whatIDo": {
+    "cards": [
+      {
+        "title": "Freelance",
+        "titleEm": "web and mobile developer",
+        "text": "I design and build websites and apps, from understanding your needs to delivery.",
+        "link": "See the offer",
+        "href": "#freelance"
+      },
+      {
+        "title": "Freelance",
+        "titleEm": "Instagram DM setter",
+        "text": "I handle your Instagram direct message conversations.",
+        "link": "Learn more",
+        "href": "#autres-activites"
+      },
+      {
+        "title": "Computer engineering student,",
+        "titleEm": "ERP / Odoo work-study",
+        "text": "Engineering degree at CESI Labège, work-study at Imagin'Expo.",
+        "link": "See my background",
+        "href": "#parcours"
+      }
+    ]
+  },
+  "freelance": {
+    "title": "A web or mobile project?",
+    "titleMark": "Let's talk.",
+    "intro": "I handle the whole cycle: understanding your needs, designing the solution, presenting it, then improving it with you.",
+    "servicesLabel": "What I offer",
+    "services": [
+      "Showcase websites",
+      "Website redesigns",
+      "Web apps",
+      "Mobile apps",
+      "Mini ERP",
+      "AI automations"
+    ],
+    "clientsLabel": "Who it's for",
+    "clients": ["Tradespeople and very small businesses", "Independent professionals", "Startups and SMEs"],
+    "methodLabel": "My method",
+    "method": [
+      "I listen to and analyse your needs.",
+      "I turn them into technical requirements.",
+      "I define the architecture and design the solution.",
+      "I present it to you and we improve it together."
+    ],
+    "cta": "Book a 15-minute call"
+  },
+  "journey": {
+    "schools": [
+      {
+        "tag": "CESI Labège · 3 years · work-study",
+        "title": "Engineering degree in",
+        "titleEm": "computer science",
+        "entries": [
+          {
+            "label": "Work-study · ongoing, year 1 of 3",
+            "title": "ERP integration project manager · Imagin'Expo",
+            "text": "Integrating Odoo into the company, over the 3 years of the engineering degree.",
+            "items": [
+              "Scoping the integration project.",
+              "Migrating existing data into Odoo.",
+              "Training users."
+            ],
+            "tech": "Odoo"
+          }
+        ]
+      },
+      {
+        "tag": "IUT Paul Sabatier · 2023–2026",
+        "title": "Bachelor's in",
+        "titleEm": "computer science (BUT)",
+        "entries": [
+          {
+            "label": "Year 3 · work-study · 1 year",
+            "title": "Odoo developer · Gembaware (ERP integrator)",
+            "items": [
+              "Connector module for smart lockers.",
+              "API connector module for an e-commerce website: stock and sales synchronisation, with an interface to review imports.",
+              "Stock management module.",
+              "FTP receiver to parse files."
+            ],
+            "stepsIntro": "The full development cycle, from need to solution:",
+            "steps": [
+              "Client meetings: gathering and analysing requirements.",
+              "Turning functional requirements into technical requirements.",
+              "Designing the architecture, then the solution.",
+              "Presenting the solution to the client and improving it with them."
+            ],
+            "highlight": "Key skill: client communication.",
+            "tech": "Odoo · Python · API · FTP"
+          },
+          {
+            "label": "End of year 2 · internship · 3 months",
+            "title": "Developer · Spherea Tests et Services (aerospace)",
+            "text": "Built software that parses CSV files to support FIDES calculations. FIDES is a methodology for calculating the reliability of electronic equipment.",
+            "tech": "Python · PyQt6 · SQL · pywin32"
+          },
+          {
+            "label": "During the BUT · projects",
+            "title": "Applications and methods",
+            "items": [
+              "E-commerce application in Java, for desktop and web.",
+              "Real estate sales management application.",
+              "Sports team website with an API, task management mobile app.",
+              "Agile Scrum method, CI/CD pipeline."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "groups": [
+      {
+        "name": "ERP / Odoo",
+        "tone": "violet",
+        "items": [
+          "Custom modules",
+          "API connectors",
+          "File imports (FTP)",
+          "Stock management",
+          "In-company integration"
+        ]
+      },
+      {
+        "name": "Languages",
+        "tone": "yellow",
+        "items": ["Python", "Java", "JavaScript", "C", "C#", "C++", "Ada", "HTML / CSS"]
+      },
+      {
+        "name": "Data",
+        "tone": "mint",
+        "items": ["SQL", "Neo4J"]
+      },
+      {
+        "name": "Methods and tools",
+        "tone": "coral",
+        "items": ["Scrum", "CI/CD"]
+      },
+      {
+        "name": "Client relations",
+        "tone": "neutral",
+        "items": ["Requirements gathering and analysis", "Solution design", "Solution presentations"]
+      }
+    ]
+  },
+  "other": {
+    "title": "Instagram",
+    "titleEm": "DM setting",
+    "intro": "Alongside development, I work as a freelance Instagram DM setter: I handle direct message conversations.",
+    "offerLabel": "What I offer",
+    "offer": [
+      "I reply to the direct messages your Instagram account receives.",
+      "I qualify each lead: their needs, their situation, their interest in your offer.",
+      "I offer a call to qualified leads and pass the booked appointment on to you."
+    ],
+    "clientsLabel": "Who it's for",
+    "clients": "Entrepreneurs, coaches and creators who receive enquiries by direct message and lack the time to answer them.",
+    "cta": "Let's discuss it"
+  },
+  "contact": {
+    "title": "Let's work",
+    "titleMark": "together.",
+    "intro": "A development project, a setting mission, or a question: write to me.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "type": "Type of request",
+      "types": {
+        "dev": "Web or mobile development",
+        "setting": "Instagram DM setting",
+        "other": "Other"
+      },
+      "message": "Message",
+      "honeypot": "Leave this field empty",
+      "submit": "Send",
+      "sending": "Sending…",
+      "success": "Thank you, your message has been sent. I'll get back to you soon.",
+      "error": "Sending failed. Please try again or email me directly.",
+      "invalid": "Please check the fields: name, a valid email and a message are required."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Yoan Poux--Bories",
+    "colophon": "Set in Instrument Serif and Plus Jakarta Sans"
+  }
+}

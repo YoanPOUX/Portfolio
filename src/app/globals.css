@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* Light theme is always the default; dark only applies via [data-theme="dark"]. */
+:root {
+  --bg: #fbf9ff;
+  --card: #ffffff;
+  --inset: #f2eeff;
+  --ink: #1a1033;
+  --muted: #4f4670;
+  --rule: #d8d0f5;
+  --accent: #5b3df5;
+  --accent-hover: #3f24c9;
+  --field-bg: #ffffff;
+  --field-border: #1a1033;
+  --btn: #5b3df5;
+  --btn-hover: #3f24c9;
+
+  /* Fixed accents, identical in both themes. */
+  --violet: #5b3df5;
+  --yellow: #ffd23f;
+  --mint: #7fe3c4;
+  --coral: #ff7a66;
+  --on-accent: #1a1033;
+  --on-violet: #ffffff;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #120d24;
+  --card: #1d1536;
+  --inset: #2a1f4d;
+  --ink: #f3eeff;
+  --muted: #c9bfea;
+  --rule: #3a2f63;
+  --accent: #b9a8ff;
+  --accent-hover: #d6ccff;
+  --field-bg: #120d24;
+  --field-border: #a89bdb;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-inset: var(--inset);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-field: var(--field-bg);
+  --color-field-border: var(--field-border);
+  --color-btn: var(--btn);
+  --color-btn-hover: var(--btn-hover);
+  --color-violet: var(--violet);
+  --color-yellow: var(--yellow);
+  --color-mint: var(--mint);
+  --color-coral: var(--coral);
+  --color-on-accent: var(--on-accent);
+  --color-on-violet: var(--on-violet);
+
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Yellow highlighter: one word per section title. */
+.mark {
+  background: var(--yellow);
+  color: var(--on-accent);
+  border-radius: 0.18em;
+  padding: 0 0.12em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

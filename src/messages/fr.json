@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Yoan Poux--Bories · Freelance développeur web et mobile",
+    "description": "Freelance développeur web et mobile, freelance setter DM Instagram, et étudiant en ingénierie informatique en alternance (intégration ERP Odoo).",
+    "ogLocale": "fr_FR"
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "languageSwitch": "Choix de la langue",
+    "themeToDark": "Passer au thème sombre",
+    "themeToLight": "Passer au thème clair",
+    "summary": "Sommaire"
+  },
+  "nav": {
+    "freelance": "Freelance",
+    "journey": "Parcours",
+    "skills": "Compétences",
+    "other": "Autres activités",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Freelance · Setter DM · Étudiant ingénieur",
+    "firstName": "Yoan",
+    "lastName": "Poux--Bories",
+    "photoAlt": "Portrait de Yoan Poux--Bories",
+    "tagline": "Freelance développeur web et mobile, freelance setter DM Instagram, et étudiant en ingénierie informatique en alternance (intégration ERP Odoo).",
+    "ctaContact": "Me contacter",
+    "ctaJourney": "Voir mon parcours"
+  },
+  "sections": {
+    "whatIDo": "Ce que je fais",
+    "freelance": "Freelance",
+    "journey": "Parcours et missions",
+    "skills": "Compétences",
+    "other": "Autres activités",
+    "contact": "Contact"
+  },
+  "whatIDo": {
+    "cards": [
+      {
+        "title": "Freelance développeur",
+        "titleEm": "web et mobile",
+        "text": "Je conçois et développe des sites et des applications, du recueil du besoin à la livraison.",
+        "link": "Voir l'offre",
+        "href": "#freelance"
+      },
+      {
+        "title": "Freelance setter",
+        "titleEm": "DM Instagram",
+        "text": "Je prends en charge vos conversations en messages privés Instagram.",
+        "link": "En savoir plus",
+        "href": "#autres-activites"
+      },
+      {
+        "title": "Étudiant en ingénierie informatique,",
+        "titleEm": "alternance ERP / Odoo",
+        "text": "Cycle ingénieur au CESI Labège, en alternance chez Imagin'Expo.",
+        "link": "Voir mon parcours",
+        "href": "#parcours"
+      }
+    ]
+  },
+  "freelance": {
+    "title": "Un projet web ou mobile ?",
+    "titleMark": "Parlons-en.",
+    "intro": "Je m'occupe de tout le cycle : comprendre votre besoin, concevoir la solution, la présenter, puis l'améliorer avec vous.",
+    "servicesLabel": "Ce que je propose",
+    "services": [
+      "Sites vitrines",
+      "Refonte de site",
+      "Applications web",
+      "Applications mobiles",
+      "Mini ERP",
+      "Automatisations IA"
+    ],
+    "clientsLabel": "Pour qui",
+    "clients": ["Artisans et TPE", "Indépendants", "Startups et PME"],
+    "methodLabel": "Ma méthode",
+    "method": [
+      "J'écoute et j'analyse votre besoin.",
+      "Je le traduis en besoin technique.",
+      "Je définis l'architecture et je conçois la solution.",
+      "Je vous la présente et nous l'améliorons ensemble."
+    ],
+    "cta": "Réserver un échange de 15 min"
+  },
+  "journey": {
+    "schools": [
+      {
+        "tag": "CESI Labège · 3 ans · alternance",
+        "title": "Cycle ingénieur",
+        "titleEm": "informatique",
+        "entries": [
+          {
+            "label": "Alternance · en cours, 1re année sur 3",
+            "title": "Chef de projet intégration ERP · Imagin'Expo",
+            "text": "Intégration d'Odoo dans l'entreprise, sur les 3 ans du cycle ingénieur.",
+            "items": [
+              "Cadrage du projet d'intégration.",
+              "Reprise des données existantes dans Odoo.",
+              "Formation des utilisateurs."
+            ],
+            "tech": "Odoo"
+          }
+        ]
+      },
+      {
+        "tag": "IUT Paul Sabatier · 2023–2026",
+        "title": "BUT",
+        "titleEm": "Informatique",
+        "entries": [
+          {
+            "label": "3e année · alternance · 1 an",
+            "title": "Développeur Odoo · Gembaware (intégrateur ERP)",
+            "items": [
+              "Module de connexion à des armoires intelligentes.",
+              "Module de connexion à un site e-commerce par API : synchronisation des stocks et des ventes, avec une interface pour consulter les imports.",
+              "Module de gestion des stocks.",
+              "Récepteur FTP pour parser des fichiers."
+            ],
+            "stepsIntro": "Le cycle de développement complet, du besoin à la solution :",
+            "steps": [
+              "Rendez-vous clients : recueil et analyse du besoin.",
+              "Transformation du besoin fonctionnel en besoin technique.",
+              "Création de l'architecture, puis conception de la solution.",
+              "Réunions de présentation de la solution et améliorations avec le client."
+            ],
+            "highlight": "Compétence mise en avant : communication client.",
+            "tech": "Odoo · Python · API · FTP"
+          },
+          {
+            "label": "Fin de 2e année · stage · 3 mois",
+            "title": "Développeur · Spherea Tests et Services (aéronautique)",
+            "text": "Développement d'un logiciel qui parse des fichiers CSV pour aider aux calculs FIDES. FIDES est une méthodologie de calcul de la fiabilité des équipements électroniques.",
+            "tech": "Python · PyQt6 · SQL · pywin32"
+          },
+          {
+            "label": "Pendant le BUT · projets",
+            "title": "Applications et méthodes",
+            "items": [
+              "Application e-commerce en Java, sur PC et sur le web.",
+              "Application de gestion de ventes immobilières.",
+              "Site web d'équipe de sport avec API, application mobile de gestion de tâches.",
+              "Méthode agile Scrum, pipeline CI/CD."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "groups": [
+      {
+        "name": "ERP / Odoo",
+        "tone": "violet",
+        "items": [
+          "Modules sur mesure",
+          "Connecteurs API",
+          "Import de fichiers (FTP)",
+          "Gestion de stocks",
+          "Intégration en entreprise"
+        ]
+      },
+      {
+        "name": "Langages",
+        "tone": "yellow",
+        "items": ["Python", "Java", "JavaScript", "C", "C#", "C++", "Ada", "HTML / CSS"]
+      },
+      {
+        "name": "Données",
+        "tone": "mint",
+        "items": ["SQL", "Neo4J"]
+      },
+      {
+        "name": "Méthodes et outils",
+        "tone": "coral",
+        "items": ["Scrum", "CI/CD"]
+      },
+      {
+        "name": "Relation client",
+        "tone": "neutral",
+        "items": ["Recueil et analyse du besoin", "Conception", "Présentation de solutions"]
+      }
+    ]
+  },
+  "other": {
+    "title": "Setting",
+    "titleEm": "DM Instagram",
+    "intro": "En parallèle du développement, je suis setter DM Instagram en freelance : je gère les conversations en messages privés.",
+    "offerLabel": "Ce que je propose",
+    "offer": [
+      "Je réponds aux messages privés reçus sur votre compte Instagram.",
+      "Je qualifie chaque prospect : son besoin, sa situation, son intérêt pour votre offre.",
+      "Je propose un appel aux personnes qualifiées et je vous transmets le rendez-vous."
+    ],
+    "clientsLabel": "Pour qui",
+    "clients": "Les entrepreneurs, coachs et créateurs qui reçoivent des demandes en messages privés et manquent de temps pour y répondre.",
+    "cta": "En parler"
+  },
+  "contact": {
+    "title": "Travaillons",
+    "titleMark": "ensemble.",
+    "intro": "Un projet de développement, une mission de setting, ou une question : écrivez-moi.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "type": "Type de demande",
+      "types": {
+        "dev": "Développement web ou mobile",
+        "setting": "Setting DM Instagram",
+        "other": "Autre"
+      },
+      "message": "Message",
+      "honeypot": "Ne pas remplir ce champ",
+      "submit": "Envoyer",
+      "sending": "Envoi…",
+      "success": "Merci, votre message est bien parti. Je vous réponds rapidement.",
+      "error": "L'envoi n'a pas fonctionné. Réessayez ou écrivez-moi directement par email.",
+      "invalid": "Vérifiez les champs : nom, email valide et message sont obligatoires."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Yoan Poux--Bories",
+    "colophon": "Composé en Instrument Serif et Plus Jakarta Sans"
+  }
+}
