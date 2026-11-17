@@ -146,6 +146,42 @@ html:has(dialog[open]) {
   background-size: 0% 100%, auto;
 }
 
+/* Language change (FR / EN links reload the page): the old page fades out upwards,
+   the new one slides in. Browsers without cross-document view transitions switch instantly. */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: page-out 0.22s ease-in both;
+}
+
+::view-transition-new(root) {
+  animation: page-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes page-out {
+  to {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+/* Theme change: ThemeToggle reveals the new theme in a circle growing from the
+   button, so the default cross-fade is turned off. */
+html[data-transition="theme"]::view-transition-old(root),
+html[data-transition="theme"]::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
 /* Contact profile links: the brand colour grows from the pointer (--x, set by
    SocialLink) to both edges, covering the logo and the handle. */
 .social-link {
@@ -187,6 +223,10 @@ html:has(dialog[open]) {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
   .social-link,
   .social-link::before,
   .social-link .social-icon {

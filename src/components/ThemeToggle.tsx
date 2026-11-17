@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useSyncExternalStore, type MouseEvent } from "react";
 
 type Theme = "light" | "dark";
 
@@ -40,14 +40,32 @@ export function ThemeToggle({ toDark, toLight }: { toDark: string; toLight: stri
   const theme = useSyncExternalStore(subscribe, getTheme, () => "light" as Theme);
   const isDark = theme === "dark";
 
-  function toggle() {
+  function toggle(event: MouseEvent<HTMLButtonElement>) {
     const next: Theme = isDark ? "light" : "dark";
-    applyTheme(next);
     try {
       localStorage.setItem("theme", next);
     } catch {
       // Storage unavailable (private mode): the choice lasts for this page only.
     }
+    if (!document.startViewTransition || matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      applyTheme(next);
+      return;
+    }
+    // The new theme is revealed in a circle growing from the button to the farthest corner.
+    const rect = event.currentTarget.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+    const root = document.documentElement;
+    root.dataset.transition = "theme";
+    const transition = document.startViewTransition(() => applyTheme(next));
+    transition.ready.then(() => {
+      root.animate(
+        { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
+        { duration: 650, easing: "cubic-bezier(0.65, 0, 0.35, 1)", pseudoElement: "::view-transition-new(root)" },
+      );
+    });
+    transition.finished.finally(() => delete root.dataset.transition);
   }
 
   return (
