@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Dictionary } from "@/lib/i18n";
 import { cvs, navSections, sectionIds } from "@/lib/site";
 import photo from "../../public/photo.jpg";
+import { CvDialog } from "./CvDialog";
 import { pillClass } from "./Section";
 
 export function Hero({ dict }: { dict: Dictionary }) {
@@ -12,12 +13,12 @@ export function Hero({ dict }: { dict: Dictionary }) {
     <div className="pt-10 md:pt-14">
       <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="inline-block rounded-full bg-yellow px-4 py-1.5 text-sm font-bold text-on-accent">
+          <p className="hero-eyebrow inline-block rounded-full bg-yellow px-4 py-1.5 text-sm font-bold text-on-accent">
             {hero.eyebrow}
           </p>
           <h1 className="mt-10 font-serif leading-[0.9] font-normal text-ink md:mt-24">
             <span className="block text-[clamp(56px,10vw,128px)]">{hero.firstName}</span>{" "}
-            <span className="mark mt-1 inline-block rounded-[14px] px-[0.12em] pt-[0.08em] pb-[0.12em] text-[clamp(52px,9.4vw,128px)] italic">
+            <span className="hero-mark mt-1 inline-block rounded-[14px] px-[0.12em] pt-[0.08em] pb-[0.12em] text-[clamp(52px,9.4vw,128px)] italic">
               {hero.lastName}
             </span>
           </h1>
@@ -54,30 +55,19 @@ export function Hero({ dict }: { dict: Dictionary }) {
         <ul className="flex flex-wrap gap-3">
           {cvs.map((cv) => (
             <li key={cv.key}>
-              <a
+              <CvDialog
+                label={hero.cvs[cv.key]}
                 href={cv.href}
                 hrefLang={cv.hrefLang}
-                type="application/pdf"
-                target="_blank"
-                rel="noopener"
-                className={`gap-2 ${pillClass("outline", "sm")}`}
-              >
-                <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-                  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                  <path d="M12 18v-6" />
-                  <path d="m9 15 3 3 3-3" />
-                </svg>
-                {hero.cvs[cv.key]}
-                <span className="sr-only"> ({hero.cvFormat})</span>
-              </a>
+                t={{ ...hero.cvViewer, close: a11y.close }}
+              />
             </li>
           ))}
         </ul>
       </div>
 
       <nav aria-label={a11y.summary} className="mt-8 border-t border-rule pt-6">
-        <ol className="grid gap-2 md:grid-cols-4">
+        <ol className="grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
           {summary.map((item, i) => (
             <li key={item.id}>
               <a

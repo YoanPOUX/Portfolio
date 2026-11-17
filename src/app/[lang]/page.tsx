@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import { Contact } from "@/components/Contact";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Freelance, Journey, Skills, WhatIDo } from "@/components/Sections";
+import { RevealObserver } from "@/components/RevealObserver";
+import { Freelance, Journey, Skills, SoftSkills, WhatIDo } from "@/components/Sections";
 import { getDictionary, hasLocale } from "@/lib/i18n";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
@@ -26,7 +27,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <Journey dict={dict} />
           <Freelance dict={dict} />
           <Skills dict={dict} />
+          <SoftSkills dict={dict} />
           <Contact dict={dict} />
+          <RevealObserver />
         </main>
       </div>
       <footer className="mt-24 border-t border-rule">

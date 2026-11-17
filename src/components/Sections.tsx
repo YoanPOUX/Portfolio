@@ -1,6 +1,7 @@
 import type { Dictionary } from "@/lib/i18n";
-import { sectionIds } from "@/lib/site";
+import { experienceAnchor, sectionIds } from "@/lib/site";
 import { DetailDialog } from "./DetailDialog";
+import { TimelineProgress } from "./TimelineProgress";
 import { Kicker, pillClass, Section } from "./Section";
 
 type DetailSection = { title: string; text?: string; items?: string[] };
@@ -178,18 +179,23 @@ export function Journey({ dict }: { dict: Dictionary }) {
     <Section id={sectionIds.journey} number="01" label={dict.sections.journey}>
       <p className="max-w-[600px] text-lg leading-relaxed text-muted">{j.intro}</p>
 
-      <ol className="mt-8 space-y-8 border-l-2 border-rule pl-5 md:pl-8">
-        {j.experiences.map((exp) => (
-          <li key={exp.id} className="relative">
-            <span
-              aria-hidden="true"
-              className="absolute top-8 -left-[29px] size-4 rounded-full bg-accent ring-4 ring-bg md:-left-[41px]"
-            />
-            <ExperienceCard exp={exp} dict={dict} />
-            {"projects" in exp && exp.projects && <GembawareProjects projects={exp.projects} dict={dict} />}
-          </li>
-        ))}
-      </ol>
+      <div className="mt-8">
+        <TimelineProgress>
+          <ol className="space-y-8 border-l-2 border-rule pl-5 md:pl-8">
+            {j.experiences.map((exp) => (
+              <li key={exp.id} id={experienceAnchor(exp.id)} className="relative">
+                <span
+                  aria-hidden="true"
+                  data-timeline-dot
+                  className="absolute top-8 -left-[29px] size-4 rounded-full bg-accent ring-4 ring-bg transition-colors duration-300 data-[reached=false]:bg-rule motion-reduce:transition-none md:-left-[41px]"
+                />
+                <ExperienceCard exp={exp} dict={dict} />
+                {"projects" in exp && exp.projects && <GembawareProjects projects={exp.projects} dict={dict} />}
+              </li>
+            ))}
+          </ol>
+        </TimelineProgress>
+      </div>
 
       <div className="mt-14 border-t border-rule pt-10">
         <p className="inline-block rounded-full bg-yellow px-3.5 py-1 text-sm font-bold text-on-accent">
@@ -211,7 +217,7 @@ export function Journey({ dict }: { dict: Dictionary }) {
 function TitleWithMark({ title, mark }: { title: string; mark: string }) {
   return (
     <h3 className="font-serif text-[clamp(40px,5vw,56px)] leading-[1.1] font-normal text-ink">
-      {title} <span className="mark italic">{mark}</span>
+      {title} <span data-reveal className="mark italic">{mark}</span>
     </h3>
   );
 }
@@ -330,6 +336,49 @@ export function Skills({ dict }: { dict: Dictionary }) {
           </div>
         ))}
       </dl>
+    </Section>
+  );
+}
+
+const softTones: Record<string, string> = {
+  yellow: "bg-yellow",
+  mint: "bg-mint",
+  coral: "bg-coral",
+};
+
+export function SoftSkills({ dict }: { dict: Dictionary }) {
+  const s = dict.softSkills;
+  return (
+    <Section id={sectionIds.softSkills} number="04" label={dict.sections.softSkills}>
+      <TitleWithMark title={s.title} mark={s.titleMark} />
+      <p className="mt-4 max-w-[600px] text-lg leading-relaxed text-muted">{s.intro}</p>
+
+      <ul className="mt-8 grid gap-5 lg:grid-cols-3">
+        {s.items.map((item) => (
+          <li key={item.name} className="flex flex-col overflow-hidden rounded-[28px] border border-rule bg-card">
+            <div className={`px-7 pt-6 pb-5 text-on-accent ${softTones[item.tone]}`}>
+              <h4 className="font-serif text-[clamp(30px,3.4vw,38px)] leading-[1.1] font-normal italic">{item.name}</h4>
+              <p className="mt-2 text-[15px] leading-relaxed">{item.text}</p>
+            </div>
+            <div className="flex-1 px-7 pt-5 pb-7">
+              <Kicker>{s.examplesLabel}</Kicker>
+              <ul className="mt-2">
+                {item.examples.map((ex) => (
+                  <li key={ex.text} className="border-b border-rule py-3 last:border-b-0">
+                    <a
+                      href={ex.href}
+                      className="inline-block rounded-full bg-inset px-3 py-1 text-[13px] font-bold text-ink transition-colors hover:text-accent"
+                    >
+                      {ex.where} <span aria-hidden="true">→</span>
+                    </a>
+                    <p className="mt-2 text-[15px] leading-relaxed text-muted">{ex.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ul>
     </Section>
   );
 }

@@ -29,10 +29,14 @@ export const sectionIds = {
   journey: "parcours",
   freelance: "freelance",
   skills: "competences",
+  softSkills: "soft-skills",
   contact: "contact",
   // Former "Autres activités" anchor, kept on the setter block so old links still land.
   setting: "autres-activites",
 } as const;
 
 // Order of the numbered sections, shared by the navigation and the hero summary.
-export const navSections = ["journey", "freelance", "skills", "contact"] as const;
+export const navSections = ["journey", "freelance", "skills", "softSkills", "contact"] as const;
+
+// Anchor of an experience card in "Parcours & projets", e.g. #parcours-gembaware.
+export const experienceAnchor = (id: string) => `${sectionIds.journey}-${id}`;

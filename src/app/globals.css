@@ -15,6 +15,13 @@
   --btn: #5b3df5;
   --btn-hover: #3f24c9;
   --scrim: rgb(26 16 51 / 0.55);
+  /* White start of the hero highlight animations, same in both themes. */
+  --highlight-start: #ffffff;
+  /* Brand colours of the social networks (contact links hover), same in both themes. */
+  --brand-linkedin: #0a66c2;
+  --brand-github: #181717;
+  --brand-instagram: #833ab4;
+  --on-brand: #ffffff;
 
   /* Fixed accents, identical in both themes. */
   --violet: #5b3df5;
@@ -96,38 +103,115 @@ html:has(dialog[open]) {
   overflow: hidden;
 }
 
-.detail-dialog[open] {
-  animation: dialog-in 200ms ease-out;
+/* Dialog opening and closing are animated in JS (useAnimatedDialog), from and back into their button. */
+
+/* Hero, on page load: the eyebrow pill turns from white to yellow,
+   then the highlighter sweeps across the last name from left to right. */
+.hero-eyebrow {
+  animation: eyebrow-fill 1.1s ease-out 0.2s both;
 }
 
-.detail-dialog[open]::backdrop {
-  animation: backdrop-in 200ms ease-out;
-}
-
-@keyframes dialog-in {
+@keyframes eyebrow-fill {
   from {
-    opacity: 0;
-    transform: translateY(12px) scale(0.98);
+    background-color: var(--highlight-start);
   }
 }
 
-@keyframes backdrop-in {
+.hero-mark {
+  background:
+    linear-gradient(var(--yellow), var(--yellow)) left / 100% 100% no-repeat,
+    var(--highlight-start);
+  color: var(--on-accent);
+  animation: mark-sweep 0.9s cubic-bezier(0.65, 0, 0.35, 1) 0.7s both;
+}
+
+@keyframes mark-sweep {
   from {
-    opacity: 0;
+    background-size: 0% 100%, auto;
   }
+}
+
+/* Section rules draw from left to right when they enter the screen (RevealObserver).
+   Without JS the class is never set and the rules stay visible. */
+.section-rule {
+  transform-origin: left;
+  transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.reveal-ready .section-rule:not([data-revealed]) {
+  transform: scaleX(0);
+}
+
+.reveal-ready .mark[data-reveal]:not([data-revealed]) {
+  background-size: 0% 100%, auto;
+}
+
+/* Contact profile links: the brand colour grows from the pointer (--x, set by
+   SocialLink) to both edges, covering the logo and the handle. */
+.social-link {
+  --x: 50%;
+  position: relative;
+  isolation: isolate;
+  transition: color 0.3s;
+}
+
+.social-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--brand);
+  clip-path: inset(0 calc(100% - var(--x)) 0 var(--x) round 999px);
+  transition: clip-path 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.social-link .social-icon {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  color: var(--on-brand);
+}
+
+.social-link:hover::before,
+.social-link:focus-visible::before {
+  clip-path: inset(0 0 0 0 round 999px);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus-visible .social-icon {
+  background-color: transparent;
+  color: var(--on-brand);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .detail-dialog[open],
-  .detail-dialog[open]::backdrop {
+  .social-link,
+  .social-link::before,
+  .social-link .social-icon {
+    transition: none;
+  }
+
+  .hero-eyebrow,
+  .hero-mark {
     animation: none;
+  }
+
+  .section-rule,
+  .mark {
+    transition: none;
   }
 }
 
-/* Yellow highlighter: one word per section title. */
+/* Yellow highlighter: one word per section title. Starts on white and sweeps from
+   left to right when the title enters the screen (RevealObserver), like the hero name. */
 .mark {
-  background: var(--yellow);
+  background:
+    linear-gradient(var(--yellow), var(--yellow)) left / 100% 100% no-repeat,
+    var(--highlight-start);
   color: var(--on-accent);
+  transition: background-size 0.9s cubic-bezier(0.65, 0, 0.35, 1) 0.2s;
   border-radius: 0.18em;
   padding: 0 0.12em;
   -webkit-box-decoration-break: clone;

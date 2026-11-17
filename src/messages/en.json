@@ -18,6 +18,7 @@
     "journey": "Background & projects",
     "freelance": "Freelance",
     "skills": "Skills",
+    "softSkills": "Soft skills",
     "contact": "Contact"
   },
   "hero": {
@@ -30,12 +31,18 @@
     "ctaJourney": "See my background",
     "cvTitle": "My CVs",
     "cvs": { "fr": "CV in French", "uk": "CV in English (UK)" },
-    "cvFormat": "PDF, opens in a new tab"
+    "cvViewer": {
+      "preview": "PDF preview",
+      "download": "Download",
+      "openTab": "Open the PDF",
+      "fallback": "The PDF preview is not available on this device. You can open or download it."
+    }
   },
   "sections": {
     "journey": "Background & projects",
     "freelance": "Freelance web & mobile and setter",
     "skills": "Skills",
+    "softSkills": "Soft skills",
     "contact": "Contact"
   },
   "whatIDo": {
@@ -483,6 +490,44 @@
           "Functional analysis",
           "Requirements gathering",
           "Solution presentations"
+        ]
+      }
+    ]
+  },
+  "softSkills": {
+    "title": "How I",
+    "titleMark": "work.",
+    "intro": "Three qualities, and where they show in my experience.",
+    "examplesLabel": "In my experience",
+    "items": [
+      {
+        "name": "Autonomous",
+        "tone": "yellow",
+        "text": "I move forward on my own on a technical topic: I look for information, understand the existing system and propose a solution.",
+        "examples": [
+          { "where": "Gembaware · Shippingbo", "href": "#parcours-gembaware", "text": "Diagnosed API authentication and permission errors, with a tool built to inspect the token's rights." },
+          { "where": "Spherea", "href": "#parcours-spherea", "text": "Three-month internship: built a desktop application in a professional technical environment." },
+          { "where": "Freelance", "href": "#freelance", "text": "Two independent activities, web and mobile development and setting, run alongside the work-study." }
+        ]
+      },
+      {
+        "name": "Curious",
+        "tone": "mint",
+        "text": "I like understanding how tools work and exploring new technologies.",
+        "examples": [
+          { "where": "Gembaware · AI agent", "href": "#parcours-gembaware", "text": "Explored integrating AI into an ERP, using Odoo's AI features and modules." },
+          { "where": "Gembaware · Shippingbo", "href": "#parcours-gembaware", "text": "Read the API documentation and analysed an existing connector before designing the architecture." },
+          { "where": "Background", "href": "#parcours", "text": "A wide range of fields: aeronautics, ERP, web, mobile, and sales work as a setter." }
+        ]
+      },
+      {
+        "name": "Rigorous",
+        "tone": "coral",
+        "text": "I care about the reliability of what I deliver: accurate data, anticipated errors, tests.",
+        "examples": [
+          { "where": "Imagin'Expo", "href": "#parcours-imaginexpo", "text": "Data migration: retrieval, cleaning and transformation, then testing, validation and deployment." },
+          { "where": "Gembaware · Shippingbo", "href": "#parcours-gembaware", "text": "Error handling, retries and API limits; converting prices including tax into prices excluding tax to avoid double taxation." },
+          { "where": "Spherea", "href": "#parcours-spherea", "text": "Tool supporting FIDES reliability calculations, from CSV files and SQL data." }
         ]
       }
     ]

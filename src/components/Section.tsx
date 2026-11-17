@@ -16,8 +16,9 @@ export function Section({
     <section
       id={id}
       aria-labelledby={`${id}-label`}
-      className="mt-20 grid gap-6 border-t border-ink pt-6 md:mt-24 md:grid-cols-[220px_1fr] md:gap-8"
+      className="relative mt-20 grid gap-6 pt-6 md:mt-24 md:grid-cols-[220px_1fr] md:gap-8"
     >
+      <span aria-hidden="true" data-reveal className="section-rule absolute inset-x-0 top-0 h-px bg-ink" />
       <div>
         <p aria-hidden="true" className="font-serif text-[64px] leading-none text-accent italic">
           {number}
