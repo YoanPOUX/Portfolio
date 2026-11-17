@@ -1,9 +1,14 @@
 // Public contact details. Phone number and postal address are never displayed.
 export const contact = {
   email: "ypbsolutions31@gmail.com",
-  linkedin: "https://www.linkedin.com/in/yoan-poux-bories/",
-  github: "https://github.com/YoanPOUX",
 };
+
+// Social profiles shown in the Contact section, displayed by their handle.
+export const socials = [
+  { network: "linkedin", url: "https://www.linkedin.com/in/yoan-poux-bories/", handle: "yoan-poux-bories" },
+  { network: "github", url: "https://github.com/YoanPOUX", handle: "YoanPOUX" },
+  { network: "instagram", url: "https://instagram.com/yoyo_poux", handle: "yoyo_poux" },
+] as const;
 
 // Absolute site URL, used for metadata, Open Graph and the sitemap.
 export const siteUrl =

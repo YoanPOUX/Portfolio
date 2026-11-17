@@ -493,8 +493,8 @@
     "titleMark": "ensemble.",
     "intro": "Un projet de développement, une mission de setting, ou une question : écrivez-moi.",
     "emailLabel": "Email",
-    "linkedinLabel": "LinkedIn",
-    "githubLabel": "GitHub",
+    "socialsLabel": "Réseaux",
+    "networks": { "linkedin": "LinkedIn", "github": "GitHub", "instagram": "Instagram" },
     "form": {
       "name": "Nom",
       "email": "Email",

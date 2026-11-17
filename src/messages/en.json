@@ -489,8 +489,8 @@
     "titleMark": "together.",
     "intro": "A development project, a setting mission, or a question: write to me.",
     "emailLabel": "Email",
-    "linkedinLabel": "LinkedIn",
-    "githubLabel": "GitHub",
+    "socialsLabel": "Social profiles",
+    "networks": { "linkedin": "LinkedIn", "github": "GitHub", "instagram": "Instagram" },
     "form": {
       "name": "Name",
       "email": "Email",

@@ -1,10 +1,35 @@
+import type { ReactNode } from "react";
 import type { Dictionary } from "@/lib/i18n";
-import { contact, sectionIds } from "@/lib/site";
+import { contact, sectionIds, socials } from "@/lib/site";
 import { ContactForm } from "./ContactForm";
 import { Section } from "./Section";
 
 const linkClass =
   "mt-1 inline-block text-lg font-bold break-all text-accent underline underline-offset-4 hover:text-accent-hover";
+
+// Lucide icons (ISC licence), same stroke style as the theme toggle.
+const icons: Record<(typeof socials)[number]["network"], ReactNode> = {
+  linkedin: (
+    <>
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </>
+  ),
+  github: (
+    <>
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+      <path d="M9 18c-4.51 2-5-2-7-2" />
+    </>
+  ),
+  instagram: (
+    <>
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </>
+  ),
+};
 
 export function Contact({ dict }: { dict: Dictionary }) {
   const c = dict.contact;
@@ -16,30 +41,32 @@ export function Contact({ dict }: { dict: Dictionary }) {
       <div className="mt-8 grid gap-10 lg:grid-cols-2">
         <div>
           <p className="max-w-[400px] text-lg leading-relaxed text-muted">{c.intro}</p>
-          <dl className="mt-8 space-y-6">
-            <div>
-              <dt className="text-sm font-bold text-muted">{c.emailLabel}</dt>
-              <dd>
-                <a href={`mailto:${contact.email}`} className={linkClass}>{contact.email}</a>
-              </dd>
-            </div>
-            <div>
-              <dt className="text-sm font-bold text-muted">{c.linkedinLabel}</dt>
-              <dd>
-                <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                  linkedin.com/in/yoan-poux-bories
-                </a>
-              </dd>
-            </div>
-            <div>
-              <dt className="text-sm font-bold text-muted">{c.githubLabel}</dt>
-              <dd>
-                <a href={contact.github} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                  github.com/YoanPOUX
-                </a>
-              </dd>
-            </div>
+          <dl className="mt-8">
+            <dt className="text-sm font-bold text-muted">{c.emailLabel}</dt>
+            <dd>
+              <a href={`mailto:${contact.email}`} className={linkClass}>{contact.email}</a>
+            </dd>
           </dl>
+          <ul aria-label={c.socialsLabel} className="mt-6 space-y-2">
+            {socials.map((s) => (
+              <li key={s.network}>
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex min-h-11 items-center gap-3 text-lg font-bold text-accent hover:text-accent-hover"
+                >
+                  <span className="grid size-10 shrink-0 place-items-center rounded-full bg-inset text-ink transition-colors group-hover:text-accent">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      {icons[s.network]}
+                    </svg>
+                  </span>
+                  <span className="sr-only">{c.networks[s.network]}, </span>
+                  <span className="underline underline-offset-4">{s.handle}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
         <ContactForm t={c.form} />
       </div>
