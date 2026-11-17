@@ -27,7 +27,10 @@
     "photoAlt": "Portrait de Yoan Poux--Bories",
     "tagline": "Freelance développeur web et mobile, freelance setter DM Instagram, et étudiant en ingénierie informatique en alternance (intégration ERP Odoo).",
     "ctaContact": "Me contacter",
-    "ctaJourney": "Voir mon parcours"
+    "ctaJourney": "Voir mon parcours",
+    "cvTitle": "Mes CV",
+    "cvs": { "fr": "CV en français", "uk": "CV en anglais (UK)" },
+    "cvFormat": "PDF, nouvel onglet"
   },
   "sections": {
     "journey": "Parcours & projets",

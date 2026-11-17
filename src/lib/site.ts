@@ -3,6 +3,12 @@ export const contact = {
   email: "ypbsolutions31@gmail.com",
 };
 
+// Downloadable CVs (public/cv). Phone number redacted from the PDFs before publishing.
+export const cvs = [
+  { key: "fr", href: "/cv/CV_Yoan_Pouxbories_FR.pdf", hrefLang: "fr" },
+  { key: "uk", href: "/cv/CV_Yoan_Pouxbories_UK.pdf", hrefLang: "en-GB" },
+] as const;
+
 // Social profiles shown in the Contact section, displayed by their handle.
 export const socials = [
   { network: "linkedin", url: "https://www.linkedin.com/in/yoan-poux-bories/", handle: "yoan-poux-bories" },

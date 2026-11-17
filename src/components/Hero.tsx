@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { Dictionary } from "@/lib/i18n";
-import { navSections, sectionIds } from "@/lib/site";
+import { cvs, navSections, sectionIds } from "@/lib/site";
 import photo from "../../public/photo.jpg";
 import { pillClass } from "./Section";
 
@@ -49,7 +49,34 @@ export function Hero({ dict }: { dict: Dictionary }) {
         </div>
       </div>
 
-      <nav aria-label={a11y.summary} className="mt-10 border-t border-rule pt-6">
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+        <h2 className="text-[13px] font-bold tracking-[0.08em] text-muted uppercase">{hero.cvTitle}</h2>
+        <ul className="flex flex-wrap gap-3">
+          {cvs.map((cv) => (
+            <li key={cv.key}>
+              <a
+                href={cv.href}
+                hrefLang={cv.hrefLang}
+                type="application/pdf"
+                target="_blank"
+                rel="noopener"
+                className={`gap-2 ${pillClass("outline", "sm")}`}
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                  <path d="M12 18v-6" />
+                  <path d="m9 15 3 3 3-3" />
+                </svg>
+                {hero.cvs[cv.key]}
+                <span className="sr-only"> ({hero.cvFormat})</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <nav aria-label={a11y.summary} className="mt-8 border-t border-rule pt-6">
         <ol className="grid gap-2 md:grid-cols-4">
           {summary.map((item, i) => (
             <li key={item.id}>

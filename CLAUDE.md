@@ -37,7 +37,7 @@ Les contenus encore marqués `[À COMPLÉTER]` ne sont pas à deviner : **pose l
 - Structure depuis la refonte du 17/11/2026 : voir la section « Refonte du 17/11/2026 » en tête de `PORTFOLIO_SPEC.md`. Les projets sont présentés dans « Parcours & projets », jamais comme une section à part.
 - Les clients des entreprises (ex. chez Gembaware) sont anonymisés (« pour un client e-commerce »). Les produits tiers (Shippingbo, Modula, Odoo) peuvent être nommés.
 - Projets exclus, à ne jamais réintroduire : Valab, factures PDF personnalisées, Empreinte (widget Manufacturing), Decoupenum, gestion immobilière, application mobile de gestion de tâches. Flutter / Dart reste dans les compétences.
-- Ne jamais afficher le téléphone ni l'adresse postale de Yoan.
+- Ne jamais afficher le téléphone ni l'adresse postale de Yoan. Cela vaut aussi pour les CV téléchargeables (`public/cv/`) : le numéro a été caviardé (texte supprimé, pas masqué) des PDF d'origine. Tout nouveau CV doit être lu et caviardé avant publication. Les noms de clients peuvent rester dans les CV (choix de Yoan).
 - Aucune donnée confidentielle d'entreprise.
 
 ## Langue

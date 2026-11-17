@@ -27,7 +27,10 @@
     "photoAlt": "Portrait of Yoan Poux--Bories",
     "tagline": "Freelance web and mobile developer, freelance Instagram DM setter, and computer engineering student in a work-study program (Odoo ERP integration).",
     "ctaContact": "Contact me",
-    "ctaJourney": "See my background"
+    "ctaJourney": "See my background",
+    "cvTitle": "My CVs",
+    "cvs": { "fr": "CV in French", "uk": "CV in English (UK)" },
+    "cvFormat": "PDF, opens in a new tab"
   },
   "sections": {
     "journey": "Background & projects",
