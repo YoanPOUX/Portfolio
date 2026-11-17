@@ -602,7 +602,7 @@
           "{name}, seul destinataire des messages.",
           "Resend : envoi des emails du formulaire.",
           "Google (Gmail) : messagerie qui reçoit les messages.",
-          "Vercel : hébergement du site."
+          "Vercel : hébergement du site et mesure d'audience."
         ],
         "text": "Ces prestataires peuvent traiter des données hors de l'Union européenne, notamment aux États-Unis, avec les garanties prévues par le RGPD (clauses contractuelles types ou Data Privacy Framework)."
       },
@@ -615,7 +615,8 @@
         "items": [
           "Cookie « lang » : retient la langue choisie, pendant 1 an.",
           "Stockage local « theme » : retient le thème clair ou sombre choisi.",
-          "Aucun cookie publicitaire ni de mesure d'audience. Ces éléments servent au fonctionnement du site et ne demandent pas de consentement."
+          "Mesure d'audience : Vercel Web Analytics compte les visites (pages vues, pays, type d'appareil) sans cookie et sans suivi d'un site à l'autre.",
+          "Aucun cookie publicitaire."
         ]
       },
       {

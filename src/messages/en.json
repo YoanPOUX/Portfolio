@@ -598,7 +598,7 @@
           "{name}, the only recipient of the messages.",
           "Resend: sends the form emails.",
           "Google (Gmail): mailbox that receives the messages.",
-          "Vercel: hosts the site."
+          "Vercel: hosts the site and measures audience."
         ],
         "text": "These providers may process data outside the European Union, notably in the United States, with the safeguards provided by the GDPR (standard contractual clauses or Data Privacy Framework)."
       },
@@ -611,7 +611,8 @@
         "items": [
           "\"lang\" cookie: remembers the chosen language, for 1 year.",
           "\"theme\" local storage: remembers the chosen light or dark theme.",
-          "No advertising or audience measurement cookies. These items are needed for the site to work and do not require consent."
+          "Audience measurement: Vercel Web Analytics counts visits (page views, country, device type) without cookies and without tracking across sites.",
+          "No advertising cookies."
         ]
       },
       {
