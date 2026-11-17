@@ -4,10 +4,32 @@ import { useSyncExternalStore } from "react";
 
 type Theme = "light" | "dark";
 
+function savedTheme(): string | null {
+  try {
+    return localStorage.getItem("theme");
+  } catch {
+    return null;
+  }
+}
+
+function applyTheme(theme: Theme) {
+  if (theme === "dark") document.documentElement.dataset.theme = "dark";
+  else delete document.documentElement.dataset.theme;
+}
+
 function subscribe(onChange: () => void) {
   const observer = new MutationObserver(onChange);
   observer.observe(document.documentElement, { attributeFilter: ["data-theme"] });
-  return () => observer.disconnect();
+  // Without a saved choice, follow the system theme when it changes.
+  const system = matchMedia("(prefers-color-scheme: dark)");
+  const onSystemChange = () => {
+    if (!savedTheme()) applyTheme(system.matches ? "dark" : "light");
+  };
+  system.addEventListener("change", onSystemChange);
+  return () => {
+    observer.disconnect();
+    system.removeEventListener("change", onSystemChange);
+  };
 }
 
 function getTheme(): Theme {
@@ -20,8 +42,7 @@ export function ThemeToggle({ toDark, toLight }: { toDark: string; toLight: stri
 
   function toggle() {
     const next: Theme = isDark ? "light" : "dark";
-    if (next === "dark") document.documentElement.dataset.theme = "dark";
-    else delete document.documentElement.dataset.theme;
+    applyTheme(next);
     try {
       localStorage.setItem("theme", next);
     } catch {

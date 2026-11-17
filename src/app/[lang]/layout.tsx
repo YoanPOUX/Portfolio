@@ -17,8 +17,8 @@ const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
-// Applies the saved theme before first paint. Light unless the visitor chose dark.
-const themeScript = `try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`;
+// Applies the theme before first paint: the visitor's saved choice, otherwise the system theme.
+const themeScript = `try{var t=localStorage.getItem("theme");if(t==="dark"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.dataset.theme="dark"}catch(e){}`;
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));

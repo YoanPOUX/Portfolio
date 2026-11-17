@@ -48,7 +48,7 @@ Les contenus encore marqués `[À COMPLÉTER]` ne sont pas à deviner : **pose l
 
 ## Thème clair / sombre
 
-- Le site a deux thèmes. **Le thème clair est le thème par défaut**, toujours, même si le système du visiteur est en mode sombre. Ne pas se baser sur `prefers-color-scheme` pour choisir le thème initial.
+- Le site a deux thèmes. **Par défaut, il suit le thème du système** du visiteur (`prefers-color-scheme`), y compris quand celui-ci change. Dès que le visiteur choisit un thème avec le bouton, ce choix prime (décision de Yoan du 17/11/2026).
 - Un bouton dans la navigation, à côté du bouton FR / EN, permet de passer du clair au sombre et inversement. Il doit être accessible (`aria-label` ou `aria-pressed`, utilisable au clavier).
 - Le choix du visiteur est mémorisé dans le navigateur (`localStorage`), et appliqué avant le premier rendu pour éviter un flash de mauvais thème.
 - Implémentation : variables CSS définies sous `:root` (clair) et sous `[data-theme="dark"]` (sombre), jetons de couleur listés dans `PORTFOLIO_SPEC.md` §7 bis. Les composants utilisent uniquement ces variables, jamais de couleurs en dur (sauf les quatre accents fixes décrits dans la spécification).

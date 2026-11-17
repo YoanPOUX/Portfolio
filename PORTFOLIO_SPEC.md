@@ -157,7 +157,7 @@ Exigences :
 
 ### Comportement du thème
 
-- Deux thèmes : **clair (par défaut, toujours)** et **sombre**. Ne pas utiliser `prefers-color-scheme` pour choisir le thème initial.
+- Deux thèmes : **clair** et **sombre**. Par défaut, le site suit le thème du système (`prefers-color-scheme`) ; le choix fait avec le bouton prime ensuite (décision de Yoan du 17/11/2026).
 - Bouton de bascule dans la navigation, à côté de FR / EN. Accessible : `aria-label` ou `aria-pressed`, utilisable au clavier, zone de clic d'au moins 44 px.
 - Choix mémorisé dans `localStorage`, appliqué par un petit script en tête de page avant le premier rendu (pas de flash).
 - Implémentation : variables CSS sous `:root` (clair) et `[data-theme="dark"]` (sombre) ; les composants n'utilisent que ces variables.
@@ -225,7 +225,7 @@ Avant de construire la section concernée, Claude Code pose ces questions (avec 
 
 Rendu fidèle de la page d'accueil, textes provisoires compris :
 
-- `design/accueil-clair.png` : bureau (1360 px), thème clair, **thème par défaut**.
+- `design/accueil-clair.png` : bureau (1360 px), thème clair.
 - `design/accueil-sombre.png` : bureau (1360 px), thème sombre.
 - `design/accueil-mobile-clair.png` : mobile (390 px), thème clair.
 - `design/accueil-mobile-sombre.png` : mobile (390 px), thème sombre.
