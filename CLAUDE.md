@@ -33,8 +33,10 @@ Les contenus encore marqués `[À COMPLÉTER]` ne sont pas à deviner : **pose l
 
 - Ne rien inventer. Les emplacements `[À COMPLÉTER]` de la spécification restent visibles et faciles à repérer, jamais remplis avec du faux contenu.
 - Orthographes exactes : Gembaware, Spherea (sans accent), société « Spherea Tests et Services » (S à « Tests » et à « Services »), Imagin'Expo, FIDES, CESI Labège.
-- À Imagin'Expo : « alternance chef de projet intégration ERP ». Ne jamais écrire « intégrateur chez Imagin'Expo ».
-- Pas de section « Projets » : le site s'appuie sur des missions décrites et des compétences.
+- À Imagin'Expo : « chef de projet intégration ERP Odoo » (alternance). Ne jamais écrire « intégrateur chez Imagin'Expo ».
+- Structure depuis la refonte du 17/11/2026 : voir la section « Refonte du 17/11/2026 » en tête de `PORTFOLIO_SPEC.md`. Les projets sont présentés dans « Parcours & projets », jamais comme une section à part.
+- Les clients des entreprises (ex. chez Gembaware) sont anonymisés (« pour un client e-commerce »). Les produits tiers (Shippingbo, Modula, Odoo) peuvent être nommés.
+- Projets exclus, à ne jamais réintroduire : Valab, factures PDF personnalisées, Empreinte (widget Manufacturing), Decoupenum, gestion immobilière, application mobile de gestion de tâches. Flutter / Dart reste dans les compétences.
 - Ne jamais afficher le téléphone ni l'adresse postale de Yoan.
 - Aucune donnée confidentielle d'entreprise.
 

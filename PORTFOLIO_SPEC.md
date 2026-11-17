@@ -4,6 +4,18 @@ Document de référence pour Claude Code. Le contenu ci-dessous vient directemen
 
 ---
 
+## Refonte du 17/11/2026 (prioritaire sur les §1, §4 et §6 ci-dessous)
+
+Demandée par Yoan, à partir de son CV et de ses notes de rapport d'alternance. Les textes FR / EN sont dans `src/messages/`.
+
+- **Structure** : header (navigation à 4 liens) → hero conservé (nom, photo, accroche, sommaire à 4 entrées) → bloc « Ce que je fais » (3 cartes : Mon parcours, Freelance web & mobile, Setter DM Instagram ; pas une section numérotée, absent de la navigation) → 01 Parcours & projets → 02 Freelance web & mobile et setter → 03 Compétences → 04 Contact. La section « Autres activités » est fondue dans le Freelance ; l'ancre `#autres-activites` pointe sur le bloc setter.
+- **Parcours & projets** : cartes compactes en timeline (Imagin'Expo 2026–2029, Gembaware 2025–2026 avec 4 projets dont le connecteur Shippingbo / Odoo en projet phare, Spherea 2025), puis 2 projets académiques. Chaque carte ouvre une fiche détaillée dans une modale (`<dialog>` natif).
+- **Clients anonymisés** (choix de Yoan) : pas de nom de client des entreprises sur le site.
+- **Imagin'Expo** : intitulé « Chef de projet intégration ERP Odoo » (choix de Yoan).
+- **Projets exclus** : Valab, factures PDF personnalisées, Empreinte (widget Manufacturing), Decoupenum, gestion immobilière, application mobile de gestion de tâches. Flutter / Dart reste dans les compétences.
+
+---
+
 ## 1. Objectif
 
 Site portfolio personnel, en français avec un bouton pour passer en anglais.
