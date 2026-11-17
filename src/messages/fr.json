@@ -10,13 +10,14 @@
     "languageSwitch": "Choix de la langue",
     "themeToDark": "Passer au thème sombre",
     "themeToLight": "Passer au thème clair",
-    "summary": "Sommaire"
+    "summary": "Sommaire",
+    "close": "Fermer",
+    "technologies": "Technologies"
   },
   "nav": {
+    "journey": "Parcours & projets",
     "freelance": "Freelance",
-    "journey": "Parcours",
     "skills": "Compétences",
-    "other": "Autres activités",
     "contact": "Contact"
   },
   "hero": {
@@ -29,174 +30,463 @@
     "ctaJourney": "Voir mon parcours"
   },
   "sections": {
-    "whatIDo": "Ce que je fais",
-    "freelance": "Freelance",
-    "journey": "Parcours et missions",
+    "journey": "Parcours & projets",
+    "freelance": "Freelance web & mobile et setter",
     "skills": "Compétences",
-    "other": "Autres activités",
     "contact": "Contact"
   },
   "whatIDo": {
+    "title": "Ce que",
+    "titleEm": "je fais",
     "cards": [
       {
-        "title": "Freelance développeur",
-        "titleEm": "web et mobile",
-        "text": "Je conçois et développe des sites et des applications, du recueil du besoin à la livraison.",
-        "link": "Voir l'offre",
+        "title": "Mon",
+        "titleEm": "parcours",
+        "text": "Étudiant en école d'ingénieur informatique, spécialisé dans le développement logiciel et l'intégration ERP. Après un BUT Informatique en alternance, je poursuis mon parcours comme chef de projet intégration ERP Odoo.",
+        "items": [],
+        "link": "Parcours & projets",
+        "href": "#parcours"
+      },
+      {
+        "title": "Freelance",
+        "titleEm": "web & mobile",
+        "text": "Je conçois des solutions numériques adaptées aux besoins de chaque client.",
+        "items": [
+          "Sites web",
+          "Applications web",
+          "Applications mobiles",
+          "Outils modernes et assistants IA quand c'est pertinent"
+        ],
+        "link": "Mon offre freelance",
         "href": "#freelance"
       },
       {
-        "title": "Freelance setter",
+        "title": "Setter",
         "titleEm": "DM Instagram",
-        "text": "Je prends en charge vos conversations en messages privés Instagram.",
-        "link": "En savoir plus",
+        "text": "Une activité commerciale et relationnelle qui complète mon profil technique.",
+        "items": [
+          "Prise de contact avec les prospects",
+          "Échanges et qualification",
+          "Gestion des conversations en messages privés",
+          "Accompagnement des prospects vers l'étape suivante"
+        ],
+        "link": "L'activité de setter",
         "href": "#autres-activites"
-      },
-      {
-        "title": "Étudiant en ingénierie informatique,",
-        "titleEm": "alternance ERP / Odoo",
-        "text": "Cycle ingénieur au CESI Labège, en alternance chez Imagin'Expo.",
-        "link": "Voir mon parcours",
-        "href": "#parcours"
       }
     ]
   },
-  "freelance": {
-    "title": "Un projet web ou mobile ?",
-    "titleMark": "Parlons-en.",
-    "intro": "Je m'occupe de tout le cycle : comprendre votre besoin, concevoir la solution, la présenter, puis l'améliorer avec vous.",
-    "servicesLabel": "Ce que je propose",
-    "services": [
-      "Sites vitrines",
-      "Refonte de site",
-      "Applications web",
-      "Applications mobiles",
-      "Mini ERP",
-      "Automatisations IA"
-    ],
-    "clientsLabel": "Pour qui",
-    "clients": ["Artisans et TPE", "Indépendants", "Startups et PME"],
-    "methodLabel": "Ma méthode",
-    "method": [
-      "J'écoute et j'analyse votre besoin.",
-      "Je le traduis en besoin technique.",
-      "Je définis l'architecture et je conçois la solution.",
-      "Je vous la présente et nous l'améliorons ensemble."
-    ],
-    "cta": "Réserver un échange de 15 min"
-  },
   "journey": {
-    "schools": [
+    "intro": "De la plus récente à la plus ancienne. Chaque carte s'ouvre sur une fiche détaillée.",
+    "experienceButton": "Découvrir l'expérience",
+    "projectButton": "Voir le projet",
+    "projectsTitle": "Projets réalisés chez Gembaware",
+    "featured": "Projet phare",
+    "experiences": [
       {
-        "tag": "CESI Labège · 3 ans · alternance",
-        "title": "Cycle ingénieur",
-        "titleEm": "informatique",
-        "entries": [
+        "id": "imaginexpo",
+        "org": "Imagin'Expo",
+        "period": "2026–2029",
+        "status": "Alternance · en cours, 1re année sur 3",
+        "role": "Chef de projet intégration ERP Odoo",
+        "school": "Cycle ingénieur informatique, CESI Labège",
+        "summary": "Intégration et déploiement d'Odoo : analyse des processus métier, recueil des besoins utilisateurs, migration des données et participation à la conduite du projet ERP.",
+        "tech": ["Odoo", "Python", "SQL"],
+        "detail": [
           {
-            "label": "Alternance · en cours, 1re année sur 3",
-            "title": "Chef de projet intégration ERP · Imagin'Expo",
-            "text": "Intégration d'Odoo dans l'entreprise, sur les 3 ans du cycle ingénieur.",
+            "title": "Contexte",
+            "text": "Alternance en école d'ingénieur au sein d'une entreprise spécialisée dans la conception, la location et l'installation de stands."
+          },
+          {
+            "title": "Missions",
             "items": [
-              "Cadrage du projet d'intégration.",
-              "Reprise des données existantes dans Odoo.",
-              "Formation des utilisateurs."
-            ],
-            "tech": "Odoo"
+              "Accompagnement de l'entreprise dans la mise en place et le déploiement d'Odoo.",
+              "Analyse des processus métier et recueil des besoins utilisateurs.",
+              "Traduction des besoins fonctionnels en solutions techniques.",
+              "Récupération, nettoyage, transformation et migration des données issues des anciens systèmes.",
+              "Participation aux phases de tests, de validation et de déploiement."
+            ]
+          },
+          {
+            "title": "Compétences mobilisées",
+            "items": [
+              "Gestion de projet ERP",
+              "Analyse fonctionnelle",
+              "Intégration Odoo",
+              "Migration et structuration des données",
+              "SQL et Python",
+              "Coordination et accompagnement des utilisateurs"
+            ]
           }
         ]
       },
       {
-        "tag": "IUT Paul Sabatier · 2023–2026",
-        "title": "BUT",
-        "titleEm": "Informatique",
-        "entries": [
+        "id": "gembaware",
+        "org": "Gembaware",
+        "period": "2025–2026",
+        "status": "Alternance · 3e année de BUT",
+        "role": "Développeur Odoo",
+        "school": "BUT Informatique, IUT Paul Sabatier",
+        "summary": "Chez un intégrateur Odoo : développement et personnalisation de modules, intégration d'API et de systèmes externes, analyse des besoins et échanges avec les clients sur des projets ERP variés.",
+        "tech": ["Python", "Odoo", "API REST", "XML / QWeb", "Git"],
+        "detail": [
           {
-            "label": "3e année · alternance · 1 an",
-            "title": "Développeur Odoo · Gembaware (intégrateur ERP)",
-            "items": [
-              "Module de connexion à des armoires intelligentes.",
-              "Module de connexion à un site e-commerce par API : synchronisation des stocks et des ventes, avec une interface pour consulter les imports.",
-              "Module de gestion des stocks.",
-              "Récepteur FTP pour parser des fichiers."
-            ],
-            "stepsIntro": "Le cycle de développement complet, du besoin à la solution :",
-            "steps": [
-              "Rendez-vous clients : recueil et analyse du besoin.",
-              "Transformation du besoin fonctionnel en besoin technique.",
-              "Création de l'architecture, puis conception de la solution.",
-              "Réunions de présentation de la solution et améliorations avec le client."
-            ],
-            "highlight": "Compétence mise en avant : communication client.",
-            "tech": "Odoo · Python · API · FTP"
+            "title": "Contexte",
+            "text": "Alternance de troisième année de BUT Informatique chez Gembaware, intégrateur de l'ERP Odoo."
           },
           {
-            "label": "Fin de 2e année · stage · 3 mois",
-            "title": "Développeur · Spherea Tests et Services (aéronautique)",
-            "text": "Développement d'un logiciel qui parse des fichiers CSV pour aider aux calculs FIDES. FIDES est une méthodologie de calcul de la fiabilité des équipements électroniques.",
-            "tech": "Python · PyQt6 · SQL · pywin32"
+            "title": "Missions",
+            "items": [
+              "Développement et personnalisation de modules Odoo.",
+              "Intégration d'API et de systèmes externes.",
+              "Analyse des besoins et échanges avec les clients.",
+              "Participation à des projets ERP variés, de la compréhension du besoin à la présentation de la solution."
+            ]
           },
           {
-            "label": "Pendant le BUT · projets",
-            "title": "Applications et méthodes",
+            "title": "Compétences mobilisées",
             "items": [
-              "Application e-commerce en Java, sur PC et sur le web.",
-              "Application de gestion de ventes immobilières.",
-              "Site web d'équipe de sport avec API, application mobile de gestion de tâches.",
-              "Méthode agile Scrum, pipeline CI/CD."
+              "Python et ORM Odoo",
+              "API REST et JSON",
+              "XML et QWeb",
+              "Git et Odoo.sh",
+              "Communication client"
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "id": "shippingbo",
+            "featured": true,
+            "name": "Connecteur Shippingbo / Odoo",
+            "client": "Pour un client e-commerce",
+            "summary": "Connecteur entre Odoo et Shippingbo, une solution OMS/WMS, pour synchroniser les produits, les commandes, les stocks et les opérations logistiques.",
+            "tech": ["Python", "Odoo", "API REST", "JSON", "OAuth2"],
+            "detail": [
+              {
+                "title": "Contexte et objectif",
+                "text": "Développer une intégration entre Odoo (v19) et Shippingbo pour automatiser et fiabiliser les échanges de données entre l'ERP et la plateforme de gestion des commandes et des stocks, en lien avec la cheffe de projet et le client."
+              },
+              {
+                "title": "Architecture",
+                "items": [
+                  "Architecture modulaire : un module générique réutilisable et un module spécifique au client.",
+                  "Client HTTP générique pour communiquer avec l'API Shippingbo.",
+                  "Organisation du code en services métier : produits, commandes, stocks, réceptions."
+                ]
+              },
+              {
+                "title": "Fonctionnalités développées",
+                "items": [
+                  "Connexion à l'API Shippingbo avec OAuth2 : tokens, renouvellement et scopes.",
+                  "Synchronisation des produits et des kits.",
+                  "Import et export des commandes.",
+                  "Synchronisation des stocks et des emplacements.",
+                  "Gestion des réceptions, des approvisionnements et des reliquats de commandes.",
+                  "Automatisation de workflows commerciaux et comptables : validation, facturation, paiement."
+                ]
+              },
+              {
+                "title": "Traitements et fiabilité",
+                "items": [
+                  "Traitement asynchrone par files de tâches et éléments de file, pilotés par des tâches planifiées.",
+                  "Gestion des erreurs, journaux, nouvelles tentatives et relance des traitements.",
+                  "Gestion des limites de l'API et des erreurs HTTP 429, avec pause et nouvel essai automatique.",
+                  "Synchronisation des stocks optimisée : seules les variations récentes sont envoyées."
+                ]
+              },
+              {
+                "title": "Problématiques techniques",
+                "items": [
+                  "Autorisations et scopes OAuth2 : débogage d'erreurs d'authentification et de permissions, avec un outil d'analyse des droits du token.",
+                  "Prix TTC envoyés par Shippingbo et prix HT attendus par Odoo : conversion selon la taxe de chaque produit, pour éviter une double taxation.",
+                  "Réceptions partielles et reliquats déclarés par l'entrepôt.",
+                  "Fiabilisation : une erreur sur un élément ne bloque pas toute la file de synchronisation."
+                ]
+              },
+              {
+                "title": "Compétences mobilisées",
+                "items": [
+                  "Python et ORM Odoo",
+                  "API REST et JSON",
+                  "OAuth2",
+                  "Architecture modulaire",
+                  "Traitements asynchrones",
+                  "Résilience et gestion des erreurs",
+                  "Débogage d'intégrations complexes",
+                  "Flux métier e-commerce et logistiques"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "modula",
+            "featured": false,
+            "name": "Intégration d'un stockage automatisé Modula",
+            "client": "Pour un client",
+            "summary": "Connexion d'un système de stockage intelligent Modula à Odoo, pour relier les opérations de stockage à la gestion des stocks de l'ERP.",
+            "tech": ["Python", "Odoo"],
+            "detail": [
+              {
+                "title": "Contexte",
+                "text": "Projet d'intégration d'un système de stockage automatisé avec Odoo."
+              },
+              {
+                "title": "Travail réalisé",
+                "items": [
+                  "Connexion du système de stockage à l'ERP.",
+                  "Intégration et exploitation des données de stock.",
+                  "Développement et adaptation des fonctionnalités nécessaires.",
+                  "Échanges et réunions avec le client et la consultante fonctionnelle.",
+                  "Participation à la compréhension du fonctionnement métier et à la définition des solutions."
+                ]
+              },
+              {
+                "title": "Compétences mobilisées",
+                "items": [
+                  "Développement Odoo",
+                  "Intégration de systèmes externes",
+                  "Gestion des stocks",
+                  "Analyse fonctionnelle",
+                  "Collaboration avec le client et la consultante"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "invitations",
+            "featured": false,
+            "name": "Module de gestion des invitations",
+            "client": "Pour une structure à membres",
+            "summary": "Module Odoo qui permet aux membres d'inviter des personnes extérieures, avec une gestion depuis le portail et le back-office.",
+            "tech": ["Python", "Odoo", "XML", "QWeb"],
+            "detail": [
+              {
+                "title": "Contexte",
+                "text": "Développement d'une fonctionnalité de gestion des invitations et des accès pour les personnes extérieures."
+              },
+              {
+                "title": "Travail réalisé",
+                "items": [
+                  "Espace portail pour créer et gérer les invitations.",
+                  "Fonctionnalités côté back-office.",
+                  "Templates d'emails.",
+                  "Développement et adaptation de templates portail.",
+                  "Contrôleurs et routes.",
+                  "Intégration avec le système de cartes d'accès et de contrôle des entrées."
+                ]
+              },
+              {
+                "title": "Compétences mobilisées",
+                "items": [
+                  "Python",
+                  "Odoo",
+                  "XML et QWeb",
+                  "Développement portail",
+                  "Contrôleurs et routes",
+                  "Gestion des accès"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ai-agent",
+            "featured": false,
+            "name": "Agent IA interne spécialisé CRM",
+            "client": "Projet interne",
+            "summary": "Participation au développement d'un agent d'intelligence artificielle interne, spécialisé dans le CRM Odoo.",
+            "tech": ["Odoo", "IA"],
+            "detail": [
+              {
+                "title": "Travail réalisé",
+                "items": [
+                  "Utilisation des fonctionnalités et modules IA d'Odoo.",
+                  "Création d'un agent spécialisé dans les problématiques CRM.",
+                  "Exploration des possibilités d'intégration de l'IA dans un ERP."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spherea",
+        "org": "Spherea Tests et Services",
+        "period": "2025",
+        "status": "Stage de 3 mois · fin de 2e année de BUT",
+        "role": "Développeur Python",
+        "school": "Aéronautique",
+        "summary": "Application desktop Python pour l'analyse FIDES, avec une interface PyQt6 et l'exploitation de données SQL.",
+        "tech": ["Python", "PyQt6", "SQL", "pywin32"],
+        "detail": [
+          {
+            "title": "Contexte",
+            "text": "Stage de trois mois chez Spherea Tests et Services, dans l'aéronautique, en fin de deuxième année de BUT Informatique. FIDES est une méthodologie de calcul de la fiabilité des équipements électroniques."
+          },
+          {
+            "title": "Travail réalisé",
+            "items": [
+              "Développement d'une application desktop Python pour l'analyse FIDES.",
+              "Lecture et analyse de fichiers CSV pour aider aux calculs FIDES.",
+              "Conception de l'interface graphique avec PyQt6.",
+              "Exploitation et manipulation de données SQL.",
+              "Utilisation de pywin32 pour accéder aux API Windows."
+            ]
+          },
+          {
+            "title": "Compétences mobilisées",
+            "items": [
+              "Python",
+              "PyQt6",
+              "SQL",
+              "API Windows",
+              "Développement desktop",
+              "Autonomie et adaptation à un environnement technique professionnel"
             ]
           }
         ]
       }
-    ]
+    ],
+    "academic": {
+      "title": "Projets académiques",
+      "period": "BUT Informatique · 1re et 2e année (2023–2025)",
+      "projects": [
+        {
+          "id": "java-shop",
+          "name": "Recherche et vente de produits",
+          "summary": "Application Java de recherche et de vente de produits, sur PC et sur le web.",
+          "tech": ["Java"],
+          "detail": [
+            {
+              "title": "Contexte",
+              "text": "Projet réalisé pendant les deux premières années du BUT Informatique, à l'IUT Paul Sabatier."
+            },
+            {
+              "title": "Fonctionnalités",
+              "items": [
+                "Recherche de produits.",
+                "Vente de produits.",
+                "Utilisation sur PC et sur le web."
+              ]
+            },
+            {
+              "title": "Compétences mobilisées",
+              "items": ["Java", "Développement applicatif", "Gestion de données", "Logique métier"]
+            }
+          ]
+        },
+        {
+          "id": "sports-site",
+          "name": "Site d'équipe sportive",
+          "summary": "Site web consacré à une équipe sportive, avec intégration d'une API.",
+          "tech": ["HTML", "CSS", "JavaScript", "API"],
+          "detail": [
+            {
+              "title": "Contexte",
+              "text": "Projet réalisé pendant les deux premières années du BUT Informatique, à l'IUT Paul Sabatier."
+            },
+            {
+              "title": "Fonctionnalités",
+              "items": ["Site web de présentation d'une équipe sportive.", "Intégration d'une API."]
+            },
+            {
+              "title": "Compétences mobilisées",
+              "items": ["HTML", "CSS", "JavaScript", "Intégration d'API", "Développement web"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freelance": {
+    "title": "Mes activités",
+    "titleMark": "en freelance.",
+    "dev": {
+      "title": "Développement",
+      "titleEm": "web & mobile",
+      "intro": "Je conçois des solutions numériques adaptées à vos besoins, avec des outils modernes et des assistants IA pour gagner en rapidité et en qualité.",
+      "servicesLabel": "Ce que je propose",
+      "services": [
+        "Sites vitrines et professionnels",
+        "Refonte de site",
+        "Applications web",
+        "Applications mobiles",
+        "Mini ERP",
+        "Automatisations IA"
+      ],
+      "clientsLabel": "Pour qui",
+      "clients": ["Artisans et TPE", "Indépendants", "Startups et PME"],
+      "methodLabel": "Ma méthode",
+      "method": [
+        "Comprendre votre besoin.",
+        "Définir une solution adaptée.",
+        "Concevoir et développer.",
+        "Tester et livrer un produit fonctionnel."
+      ],
+      "cta": "Réserver un échange de 15 min"
+    },
+    "setting": {
+      "title": "Setter",
+      "titleEm": "DM Instagram",
+      "intro": "Je gère les conversations en messages privés Instagram. Cette activité complète mon profil technique par des compétences commerciales et relationnelles.",
+      "itemsLabel": "Ce que je fais",
+      "items": [
+        "Gestion des conversations en messages privés.",
+        "Prise de contact avec les prospects.",
+        "Qualification des prospects.",
+        "Identification de leurs besoins et attentes.",
+        "Accompagnement des prospects vers la prochaine étape commerciale."
+      ],
+      "cta": "En parler"
+    }
   },
   "skills": {
     "groups": [
       {
-        "name": "ERP / Odoo",
+        "name": "Langages de programmation",
+        "tone": "yellow",
+        "items": ["Python", "Java", "JavaScript", "C", "C#", "C++", "Ada"]
+      },
+      {
+        "name": "Développement web et mobile",
+        "tone": "coral",
+        "items": ["HTML / CSS", "Flutter / Dart", "API REST", "JSON"]
+      },
+      {
+        "name": "Frameworks et technologies",
+        "tone": "neutral",
+        "items": ["ORM Odoo", "XML / QWeb", "PyQt6", "pywin32", "OAuth2"]
+      },
+      {
+        "name": "Bases de données",
+        "tone": "mint",
+        "items": ["SQL", "Neo4j"]
+      },
+      {
+        "name": "ERP et intégration",
         "tone": "violet",
         "items": [
+          "Odoo",
           "Modules sur mesure",
           "Connecteurs API",
-          "Import de fichiers (FTP)",
+          "Migration de données",
           "Gestion de stocks",
-          "Intégration en entreprise"
+          "Traitements asynchrones"
         ]
       },
       {
-        "name": "Langages",
-        "tone": "yellow",
-        "items": ["Python", "Java", "JavaScript", "C", "C#", "C++", "Ada", "HTML / CSS"]
-      },
-      {
-        "name": "Données",
-        "tone": "mint",
-        "items": ["SQL", "Neo4J"]
-      },
-      {
-        "name": "Méthodes et outils",
-        "tone": "coral",
-        "items": ["Scrum", "CI/CD"]
-      },
-      {
-        "name": "Relation client",
+        "name": "Outils et méthodes",
         "tone": "neutral",
-        "items": ["Recueil et analyse du besoin", "Conception", "Présentation de solutions"]
+        "items": [
+          "Git",
+          "Odoo.sh",
+          "Scrum",
+          "CI/CD",
+          "Analyse fonctionnelle",
+          "Recueil des besoins",
+          "Présentation de solutions"
+        ]
       }
     ]
-  },
-  "other": {
-    "title": "Setting",
-    "titleEm": "DM Instagram",
-    "intro": "En parallèle du développement, je suis setter DM Instagram en freelance : je gère les conversations en messages privés.",
-    "offerLabel": "Ce que je propose",
-    "offer": [
-      "Je réponds aux messages privés reçus sur votre compte Instagram.",
-      "Je qualifie chaque prospect : son besoin, sa situation, son intérêt pour votre offre.",
-      "Je propose un appel aux personnes qualifiées et je vous transmets le rendez-vous."
-    ],
-    "clientsLabel": "Pour qui",
-    "clients": "Les entrepreneurs, coachs et créateurs qui reçoivent des demandes en messages privés et manquent de temps pour y répondre.",
-    "cta": "En parler"
   },
   "contact": {
     "title": "Travaillons",

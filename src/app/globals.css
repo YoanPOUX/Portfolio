@@ -14,6 +14,7 @@
   --field-border: #1a1033;
   --btn: #5b3df5;
   --btn-hover: #3f24c9;
+  --scrim: rgb(26 16 51 / 0.55);
 
   /* Fixed accents, identical in both themes. */
   --violet: #5b3df5;
@@ -37,6 +38,7 @@
   --accent-hover: #d6ccff;
   --field-bg: #120d24;
   --field-border: #a89bdb;
+  --scrim: rgb(5 3 12 / 0.72);
 
   color-scheme: dark;
 }
@@ -54,6 +56,7 @@
   --color-field-border: var(--field-border);
   --color-btn: var(--btn);
   --color-btn-hover: var(--btn-hover);
+  --color-scrim: var(--scrim);
   --color-violet: var(--violet);
   --color-yellow: var(--yellow);
   --color-mint: var(--mint);
@@ -86,6 +89,39 @@ body {
 :focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
+}
+
+/* Detail sheets: no page scroll behind an open dialog, discreet entrance. */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+.detail-dialog[open] {
+  animation: dialog-in 200ms ease-out;
+}
+
+.detail-dialog[open]::backdrop {
+  animation: backdrop-in 200ms ease-out;
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail-dialog[open],
+  .detail-dialog[open]::backdrop {
+    animation: none;
+  }
 }
 
 /* Yellow highlighter: one word per section title. */

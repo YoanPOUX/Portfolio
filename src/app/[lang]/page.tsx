@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { Contact } from "@/components/Contact";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Freelance, Journey, OtherWork, Skills, WhatIDo } from "@/components/Sections";
+import { Freelance, Journey, Skills, WhatIDo } from "@/components/Sections";
 import { getDictionary, hasLocale } from "@/lib/i18n";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
@@ -23,10 +23,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <main id="contenu">
           <Hero dict={dict} />
           <WhatIDo dict={dict} />
-          <Freelance dict={dict} />
           <Journey dict={dict} />
+          <Freelance dict={dict} />
           <Skills dict={dict} />
-          <OtherWork dict={dict} />
           <Contact dict={dict} />
         </main>
       </div>

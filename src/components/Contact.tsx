@@ -9,7 +9,7 @@ const linkClass =
 export function Contact({ dict }: { dict: Dictionary }) {
   const c = dict.contact;
   return (
-    <Section id={sectionIds.contact} number="06" label={dict.sections.contact}>
+    <Section id={sectionIds.contact} number="04" label={dict.sections.contact}>
       <h3 className="font-serif text-[clamp(40px,5vw,56px)] leading-[1.1] font-normal text-ink">
         {c.title} <span className="mark italic">{c.titleMark}</span>
       </h3>

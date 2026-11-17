@@ -15,9 +15,13 @@ export const siteUrl =
 // Section anchors, shared by the navigation, the summary and the sections.
 export const sectionIds = {
   whatIDo: "ce-que-je-fais",
-  freelance: "freelance",
   journey: "parcours",
+  freelance: "freelance",
   skills: "competences",
-  other: "autres-activites",
   contact: "contact",
+  // Former "Autres activités" anchor, kept on the setter block so old links still land.
+  setting: "autres-activites",
 } as const;
+
+// Order of the numbered sections, shared by the navigation and the hero summary.
+export const navSections = ["journey", "freelance", "skills", "contact"] as const;

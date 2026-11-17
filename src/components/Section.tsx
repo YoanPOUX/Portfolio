@@ -34,10 +34,10 @@ export function Section({
   );
 }
 
-// Pill-shaped button, 56px high. "solid" is violet, "outline" follows the ink color.
-export function pillClass(variant: "solid" | "outline" = "solid") {
-  const base =
-    "inline-flex h-14 items-center justify-center rounded-full px-8 text-base font-bold transition-colors";
+// Pill-shaped button: 56px high, or 44px ("sm") inside cards. "solid" is violet, "outline" follows the ink color.
+export function pillClass(variant: "solid" | "outline" = "solid", size: "md" | "sm" = "md") {
+  const dims = size === "md" ? "h-14 px-8 text-base" : "h-11 px-5 text-[15px]";
+  const base = `inline-flex ${dims} items-center justify-center rounded-full font-bold transition-colors`;
   return variant === "solid"
     ? `${base} bg-btn text-on-violet hover:bg-btn-hover`
     : `${base} border-2 border-ink text-ink hover:border-accent hover:text-accent`;

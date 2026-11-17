@@ -10,13 +10,14 @@
     "languageSwitch": "Language",
     "themeToDark": "Switch to dark theme",
     "themeToLight": "Switch to light theme",
-    "summary": "Contents"
+    "summary": "Contents",
+    "close": "Close",
+    "technologies": "Technologies"
   },
   "nav": {
+    "journey": "Background & projects",
     "freelance": "Freelance",
-    "journey": "Background",
     "skills": "Skills",
-    "other": "Other work",
     "contact": "Contact"
   },
   "hero": {
@@ -29,174 +30,459 @@
     "ctaJourney": "See my background"
   },
   "sections": {
-    "whatIDo": "What I do",
-    "freelance": "Freelance",
-    "journey": "Background and missions",
+    "journey": "Background & projects",
+    "freelance": "Freelance web & mobile and setter",
     "skills": "Skills",
-    "other": "Other work",
     "contact": "Contact"
   },
   "whatIDo": {
+    "title": "What",
+    "titleEm": "I do",
     "cards": [
       {
+        "title": "My",
+        "titleEm": "background",
+        "text": "Computer engineering student, specialising in software development and ERP integration. After a work-study BUT in Computer Science, I am now continuing as an Odoo ERP integration project manager.",
+        "items": [],
+        "link": "Background & projects",
+        "href": "#parcours"
+      },
+      {
         "title": "Freelance",
-        "titleEm": "web and mobile developer",
-        "text": "I design and build websites and apps, from understanding your needs to delivery.",
-        "link": "See the offer",
+        "titleEm": "web & mobile",
+        "text": "I design digital solutions tailored to each client's needs.",
+        "items": [
+          "Websites",
+          "Web applications",
+          "Mobile applications",
+          "Modern tools and AI assistants where relevant"
+        ],
+        "link": "My freelance offer",
         "href": "#freelance"
       },
       {
-        "title": "Freelance",
-        "titleEm": "Instagram DM setter",
-        "text": "I handle your Instagram direct message conversations.",
-        "link": "Learn more",
+        "title": "Instagram",
+        "titleEm": "DM setter",
+        "text": "Sales and relationship work that complements my technical profile.",
+        "items": [
+          "Reaching out to leads",
+          "Conversations and qualification",
+          "Managing direct message conversations",
+          "Guiding leads to the next step"
+        ],
+        "link": "The setter work",
         "href": "#autres-activites"
-      },
-      {
-        "title": "Computer engineering student,",
-        "titleEm": "ERP / Odoo work-study",
-        "text": "Engineering degree at CESI Labège, work-study at Imagin'Expo.",
-        "link": "See my background",
-        "href": "#parcours"
       }
     ]
   },
-  "freelance": {
-    "title": "A web or mobile project?",
-    "titleMark": "Let's talk.",
-    "intro": "I handle the whole cycle: understanding your needs, designing the solution, presenting it, then improving it with you.",
-    "servicesLabel": "What I offer",
-    "services": [
-      "Showcase websites",
-      "Website redesigns",
-      "Web apps",
-      "Mobile apps",
-      "Mini ERP",
-      "AI automations"
-    ],
-    "clientsLabel": "Who it's for",
-    "clients": ["Tradespeople and very small businesses", "Independent professionals", "Startups and SMEs"],
-    "methodLabel": "My method",
-    "method": [
-      "I listen to and analyse your needs.",
-      "I turn them into technical requirements.",
-      "I define the architecture and design the solution.",
-      "I present it to you and we improve it together."
-    ],
-    "cta": "Book a 15-minute call"
-  },
   "journey": {
-    "schools": [
+    "intro": "From most recent to oldest. Each card opens a detailed sheet.",
+    "experienceButton": "Explore the experience",
+    "projectButton": "View the project",
+    "projectsTitle": "Projects at Gembaware",
+    "featured": "Key project",
+    "experiences": [
       {
-        "tag": "CESI Labège · 3 years · work-study",
-        "title": "Engineering degree in",
-        "titleEm": "computer science",
-        "entries": [
+        "id": "imaginexpo",
+        "org": "Imagin'Expo",
+        "period": "2026–2029",
+        "status": "Work-study · ongoing, year 1 of 3",
+        "role": "Odoo ERP integration project manager",
+        "school": "Engineering degree in computer science, CESI Labège",
+        "summary": "Integrating and deploying Odoo: analysing business processes, gathering user requirements, migrating data and taking part in running the ERP project.",
+        "tech": ["Odoo", "Python", "SQL"],
+        "detail": [
           {
-            "label": "Work-study · ongoing, year 1 of 3",
-            "title": "ERP integration project manager · Imagin'Expo",
-            "text": "Integrating Odoo into the company, over the 3 years of the engineering degree.",
+            "title": "Context",
+            "text": "Engineering school work-study at a company that designs, rents out and installs exhibition stands."
+          },
+          {
+            "title": "Missions",
             "items": [
-              "Scoping the integration project.",
-              "Migrating existing data into Odoo.",
-              "Training users."
-            ],
-            "tech": "Odoo"
+              "Supporting the company in setting up and deploying Odoo.",
+              "Analysing business processes and gathering user requirements.",
+              "Turning functional requirements into technical solutions.",
+              "Retrieving, cleaning, transforming and migrating data from legacy systems.",
+              "Taking part in testing, validation and deployment phases."
+            ]
+          },
+          {
+            "title": "Skills used",
+            "items": [
+              "ERP project management",
+              "Functional analysis",
+              "Odoo integration",
+              "Data migration and structuring",
+              "SQL and Python",
+              "User coordination and support"
+            ]
           }
         ]
       },
       {
-        "tag": "IUT Paul Sabatier · 2023–2026",
-        "title": "BUT",
-        "titleEm": "(3-year Bachelor's in Computer Science)",
-        "entries": [
+        "id": "gembaware",
+        "org": "Gembaware",
+        "period": "2025–2026",
+        "status": "Work-study · year 3 of the BUT",
+        "role": "Odoo developer",
+        "school": "BUT in Computer Science, IUT Paul Sabatier",
+        "summary": "At an Odoo integrator: developing and customising modules, integrating APIs and external systems, analysing needs and working with clients on a range of ERP projects.",
+        "tech": ["Python", "Odoo", "REST API", "XML / QWeb", "Git"],
+        "detail": [
           {
-            "label": "Year 3 · work-study · 1 year",
-            "title": "Odoo developer · Gembaware (ERP integrator)",
-            "items": [
-              "Connector module for smart lockers.",
-              "API connector module for an e-commerce website: stock and sales synchronisation, with an interface to review imports.",
-              "Stock management module.",
-              "FTP receiver to parse files."
-            ],
-            "stepsIntro": "The full development cycle, from need to solution:",
-            "steps": [
-              "Client meetings: gathering and analysing requirements.",
-              "Turning functional requirements into technical requirements.",
-              "Designing the architecture, then the solution.",
-              "Presenting the solution to the client and improving it with them."
-            ],
-            "highlight": "Key skill: client communication.",
-            "tech": "Odoo · Python · API · FTP"
+            "title": "Context",
+            "text": "Third-year work-study of the BUT in Computer Science at Gembaware, an Odoo ERP integrator."
           },
           {
-            "label": "End of year 2 · internship · 3 months",
-            "title": "Developer · Spherea Tests et Services (aeronautics)",
-            "text": "Built software that parses CSV files to support FIDES calculations. FIDES is a methodology for calculating the reliability of electronic equipment.",
-            "tech": "Python · PyQt6 · SQL · pywin32"
+            "title": "Missions",
+            "items": [
+              "Developing and customising Odoo modules.",
+              "Integrating APIs and external systems.",
+              "Analysing needs and working with clients.",
+              "Taking part in a range of ERP projects, from understanding the need to presenting the solution."
+            ]
           },
           {
-            "label": "During the BUT · projects",
-            "title": "Applications and methods",
+            "title": "Skills used",
             "items": [
-              "E-commerce application in Java, for desktop and web.",
-              "Real estate sales management application.",
-              "Sports team website with an API, task management mobile app.",
-              "Agile Scrum method, CI/CD pipeline."
+              "Python and the Odoo ORM",
+              "REST APIs and JSON",
+              "XML and QWeb",
+              "Git and Odoo.sh",
+              "Client communication"
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "id": "shippingbo",
+            "featured": true,
+            "name": "Shippingbo / Odoo connector",
+            "client": "For an e-commerce client",
+            "summary": "Connector between Odoo and Shippingbo, an OMS/WMS platform, to synchronise products, orders, stock and logistics operations.",
+            "tech": ["Python", "Odoo", "REST API", "JSON", "OAuth2"],
+            "detail": [
+              {
+                "title": "Context and goal",
+                "text": "Build an integration between Odoo (v19) and Shippingbo to automate and secure data exchanges between the ERP and the order and stock management platform, working with the project manager and the client."
+              },
+              {
+                "title": "Architecture",
+                "items": [
+                  "Modular architecture: a reusable generic module and a client-specific module.",
+                  "Generic HTTP client to communicate with the Shippingbo API.",
+                  "Code organised into business services: products, orders, stock, receipts."
+                ]
+              },
+              {
+                "title": "Features built",
+                "items": [
+                  "Connection to the Shippingbo API with OAuth2: tokens, renewal and scopes.",
+                  "Product and kit synchronisation.",
+                  "Order import and export.",
+                  "Stock and location synchronisation.",
+                  "Receipts, replenishment and order backorders.",
+                  "Automated sales and accounting workflows: confirmation, invoicing, payment."
+                ]
+              },
+              {
+                "title": "Processing and reliability",
+                "items": [
+                  "Asynchronous processing through task queues and queue items, driven by scheduled jobs.",
+                  "Error handling, logs, retries and reprocessing.",
+                  "Handling API limits and HTTP 429 errors, with automatic pause and retry.",
+                  "Optimised stock synchronisation: only recent changes are sent."
+                ]
+              },
+              {
+                "title": "Technical challenges",
+                "items": [
+                  "OAuth2 permissions and scopes: debugging authentication and permission errors, with a tool to inspect the token's rights.",
+                  "Shippingbo sends prices including tax while Odoo expects prices excluding tax: conversion based on each product's tax, to avoid double taxation.",
+                  "Partial receipts and backorders reported by the warehouse.",
+                  "Reliability: an error on one item does not block the whole synchronisation queue."
+                ]
+              },
+              {
+                "title": "Skills used",
+                "items": [
+                  "Python and the Odoo ORM",
+                  "REST APIs and JSON",
+                  "OAuth2",
+                  "Modular architecture",
+                  "Asynchronous processing",
+                  "Resilience and error handling",
+                  "Debugging complex integrations",
+                  "E-commerce and logistics business flows"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "modula",
+            "featured": false,
+            "name": "Modula automated storage integration",
+            "client": "For a client",
+            "summary": "Connecting a Modula smart storage system to Odoo, to link storage operations with the ERP's stock management.",
+            "tech": ["Python", "Odoo"],
+            "detail": [
+              {
+                "title": "Context",
+                "text": "Project to integrate an automated storage system with Odoo."
+              },
+              {
+                "title": "Work done",
+                "items": [
+                  "Connecting the storage system to the ERP.",
+                  "Integrating and using stock data.",
+                  "Developing and adapting the required features.",
+                  "Meetings and exchanges with the client and the functional consultant.",
+                  "Helping to understand the business processes and define the solutions."
+                ]
+              },
+              {
+                "title": "Skills used",
+                "items": [
+                  "Odoo development",
+                  "External system integration",
+                  "Stock management",
+                  "Functional analysis",
+                  "Working with the client and the consultant"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "invitations",
+            "featured": false,
+            "name": "Invitation management module",
+            "client": "For a membership organisation",
+            "summary": "Odoo module that lets members invite external guests, managed from both the portal and the back office.",
+            "tech": ["Python", "Odoo", "XML", "QWeb"],
+            "detail": [
+              {
+                "title": "Context",
+                "text": "Building a feature to manage invitations and access for external guests."
+              },
+              {
+                "title": "Work done",
+                "items": [
+                  "Portal area to create and manage invitations.",
+                  "Back-office features.",
+                  "Email templates.",
+                  "Developing and adapting portal templates.",
+                  "Controllers and routes.",
+                  "Integration with the access card and entry control system."
+                ]
+              },
+              {
+                "title": "Skills used",
+                "items": [
+                  "Python",
+                  "Odoo",
+                  "XML and QWeb",
+                  "Portal development",
+                  "Controllers and routes",
+                  "Access management"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ai-agent",
+            "featured": false,
+            "name": "Internal CRM AI agent",
+            "client": "Internal project",
+            "summary": "Contributed to building an internal artificial intelligence agent specialised in the Odoo CRM.",
+            "tech": ["Odoo", "AI"],
+            "detail": [
+              {
+                "title": "Work done",
+                "items": [
+                  "Using Odoo's AI features and modules.",
+                  "Creating an agent specialised in CRM topics.",
+                  "Exploring how AI can be integrated into an ERP."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spherea",
+        "org": "Spherea Tests et Services",
+        "period": "2025",
+        "status": "3-month internship · end of year 2 of the BUT",
+        "role": "Python developer",
+        "school": "Aeronautics",
+        "summary": "Python desktop application for FIDES analysis, with a PyQt6 interface and SQL data processing.",
+        "tech": ["Python", "PyQt6", "SQL", "pywin32"],
+        "detail": [
+          {
+            "title": "Context",
+            "text": "Three-month internship at Spherea Tests et Services, in aeronautics, at the end of the second year of the BUT in Computer Science. FIDES is a methodology for calculating the reliability of electronic equipment."
+          },
+          {
+            "title": "Work done",
+            "items": [
+              "Developing a Python desktop application for FIDES analysis.",
+              "Reading and analysing CSV files to support FIDES calculations.",
+              "Designing the graphical interface with PyQt6.",
+              "Processing and handling SQL data.",
+              "Using pywin32 to access Windows APIs."
+            ]
+          },
+          {
+            "title": "Skills used",
+            "items": [
+              "Python",
+              "PyQt6",
+              "SQL",
+              "Windows APIs",
+              "Desktop development",
+              "Autonomy and adapting to a professional technical environment"
             ]
           }
         ]
       }
-    ]
+    ],
+    "academic": {
+      "title": "Academic projects",
+      "period": "BUT in Computer Science · years 1 and 2 (2023–2025)",
+      "projects": [
+        {
+          "id": "java-shop",
+          "name": "Product search and sales",
+          "summary": "Java application for searching and selling products, on desktop and on the web.",
+          "tech": ["Java"],
+          "detail": [
+            {
+              "title": "Context",
+              "text": "Project completed during the first two years of the BUT in Computer Science at IUT Paul Sabatier."
+            },
+            {
+              "title": "Features",
+              "items": ["Product search.", "Product sales.", "Use on desktop and on the web."]
+            },
+            {
+              "title": "Skills used",
+              "items": ["Java", "Application development", "Data management", "Business logic"]
+            }
+          ]
+        },
+        {
+          "id": "sports-site",
+          "name": "Sports team website",
+          "summary": "Website for a sports team, with an API integration.",
+          "tech": ["HTML", "CSS", "JavaScript", "API"],
+          "detail": [
+            {
+              "title": "Context",
+              "text": "Project completed during the first two years of the BUT in Computer Science at IUT Paul Sabatier."
+            },
+            {
+              "title": "Features",
+              "items": ["Website presenting a sports team.", "API integration."]
+            },
+            {
+              "title": "Skills used",
+              "items": ["HTML", "CSS", "JavaScript", "API integration", "Web development"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "freelance": {
+    "title": "My freelance",
+    "titleMark": "work.",
+    "dev": {
+      "title": "Web & mobile",
+      "titleEm": "development",
+      "intro": "I design digital solutions tailored to your needs, using modern tools and AI assistants to work faster and better.",
+      "servicesLabel": "What I offer",
+      "services": [
+        "Showcase and business websites",
+        "Website redesigns",
+        "Web apps",
+        "Mobile apps",
+        "Mini ERP",
+        "AI automations"
+      ],
+      "clientsLabel": "Who it's for",
+      "clients": ["Tradespeople and very small businesses", "Independent professionals", "Startups and SMEs"],
+      "methodLabel": "My method",
+      "method": [
+        "Understand your needs.",
+        "Define a suitable solution.",
+        "Design and build.",
+        "Test and deliver a working product."
+      ],
+      "cta": "Book a 15-minute call"
+    },
+    "setting": {
+      "title": "Instagram",
+      "titleEm": "DM setter",
+      "intro": "I manage Instagram direct message conversations. This work complements my technical profile with sales and relationship skills.",
+      "itemsLabel": "What I do",
+      "items": [
+        "Managing direct message conversations.",
+        "Reaching out to leads.",
+        "Qualifying leads.",
+        "Identifying their needs and expectations.",
+        "Guiding leads to the next sales step."
+      ],
+      "cta": "Let's discuss it"
+    }
   },
   "skills": {
     "groups": [
       {
-        "name": "ERP / Odoo",
+        "name": "Programming languages",
+        "tone": "yellow",
+        "items": ["Python", "Java", "JavaScript", "C", "C#", "C++", "Ada"]
+      },
+      {
+        "name": "Web and mobile development",
+        "tone": "coral",
+        "items": ["HTML / CSS", "Flutter / Dart", "REST APIs", "JSON"]
+      },
+      {
+        "name": "Frameworks and technologies",
+        "tone": "neutral",
+        "items": ["Odoo ORM", "XML / QWeb", "PyQt6", "pywin32", "OAuth2"]
+      },
+      {
+        "name": "Databases",
+        "tone": "mint",
+        "items": ["SQL", "Neo4j"]
+      },
+      {
+        "name": "ERP and integration",
         "tone": "violet",
         "items": [
+          "Odoo",
           "Custom modules",
           "API connectors",
-          "File imports (FTP)",
+          "Data migration",
           "Stock management",
-          "In-company integration"
+          "Asynchronous processing"
         ]
       },
       {
-        "name": "Languages",
-        "tone": "yellow",
-        "items": ["Python", "Java", "JavaScript", "C", "C#", "C++", "Ada", "HTML / CSS"]
-      },
-      {
-        "name": "Data",
-        "tone": "mint",
-        "items": ["SQL", "Neo4J"]
-      },
-      {
-        "name": "Methods and tools",
-        "tone": "coral",
-        "items": ["Scrum", "CI/CD"]
-      },
-      {
-        "name": "Client relations",
+        "name": "Tools and methods",
         "tone": "neutral",
-        "items": ["Requirements gathering and analysis", "Solution design", "Solution presentations"]
+        "items": [
+          "Git",
+          "Odoo.sh",
+          "Scrum",
+          "CI/CD",
+          "Functional analysis",
+          "Requirements gathering",
+          "Solution presentations"
+        ]
       }
     ]
-  },
-  "other": {
-    "title": "Instagram",
-    "titleEm": "DM setting",
-    "intro": "Alongside development, I work as a freelance Instagram DM setter: I handle direct message conversations.",
-    "offerLabel": "What I offer",
-    "offer": [
-      "I reply to the direct messages your Instagram account receives.",
-      "I qualify each lead: their needs, their situation, their interest in your offer.",
-      "I offer a call to qualified leads and pass the booked appointment on to you."
-    ],
-    "clientsLabel": "Who it's for",
-    "clients": "Entrepreneurs, coaches and creators who receive enquiries by direct message and lack the time to answer them.",
-    "cta": "Let's discuss it"
   },
   "contact": {
     "title": "Let's work",

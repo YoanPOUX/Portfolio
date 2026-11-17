@@ -1,18 +1,12 @@
 import Image from "next/image";
 import type { Dictionary } from "@/lib/i18n";
-import { sectionIds } from "@/lib/site";
+import { navSections, sectionIds } from "@/lib/site";
 import photo from "../../public/photo.jpg";
 import { pillClass } from "./Section";
 
 export function Hero({ dict }: { dict: Dictionary }) {
   const { hero, nav, a11y } = dict;
-  const summary = [
-    { id: sectionIds.freelance, label: nav.freelance },
-    { id: sectionIds.journey, label: nav.journey },
-    { id: sectionIds.skills, label: nav.skills },
-    { id: sectionIds.other, label: nav.other },
-    { id: sectionIds.contact, label: nav.contact },
-  ];
+  const summary = navSections.map((key) => ({ id: sectionIds[key], label: nav[key] }));
 
   return (
     <div className="pt-10 md:pt-14">
@@ -56,7 +50,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
       </div>
 
       <nav aria-label={a11y.summary} className="mt-10 border-t border-rule pt-6">
-        <ol className="grid gap-2 md:grid-cols-5">
+        <ol className="grid gap-2 md:grid-cols-4">
           {summary.map((item, i) => (
             <li key={item.id}>
               <a
@@ -64,7 +58,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
                 className="group inline-flex min-h-11 items-baseline gap-3 text-[15px] font-bold text-ink"
               >
                 <span className="font-serif text-2xl font-normal text-accent italic">
-                  {String(i + 2).padStart(2, "0")}
+                  {String(i + 1).padStart(2, "0")}
                 </span>{" "}
                 <span className="group-hover:text-accent">{item.label}</span>
               </a>

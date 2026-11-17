@@ -1,16 +1,10 @@
 import type { Dictionary, Locale } from "@/lib/i18n";
-import { sectionIds } from "@/lib/site";
+import { navSections, sectionIds } from "@/lib/site";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { ThemeToggle } from "./ThemeToggle";
 
 export function Header({ dict, lang }: { dict: Dictionary; lang: Locale }) {
-  const links = [
-    { id: sectionIds.freelance, label: dict.nav.freelance },
-    { id: sectionIds.journey, label: dict.nav.journey },
-    { id: sectionIds.skills, label: dict.nav.skills },
-    { id: sectionIds.other, label: dict.nav.other },
-    { id: sectionIds.contact, label: dict.nav.contact },
-  ];
+  const links = navSections.map((key) => ({ id: sectionIds[key], label: dict.nav[key] }));
 
   return (
     <header className="flex flex-col gap-3 py-4 md:flex-row md:items-center md:justify-between">
