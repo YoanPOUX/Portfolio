@@ -3,6 +3,22 @@ export const contact = {
   email: "ypbsolutions31@gmail.com",
 };
 
+// Legal identity, required by French law (LCEN) on the legal notice page only.
+// Address and phone appear nowhere else on the site (Yoan's decision, 17/11/2026).
+export const publisher = {
+  name: "Yoan Poux--Bories",
+  siret: "108 414 285 00024",
+  address: "Bâtiment 3, appartement 302, 2 rue Georges Vallerey, 31320 Castanet-Tolosan, France",
+  phone: "+33 6 70 78 41 98",
+  email: contact.email,
+  host: "Vercel Inc.",
+  hostAddress: "440 N Barranca Ave #4133, Covina, CA 91723, USA",
+  hostUrl: "https://vercel.com",
+};
+
+// Paths of the legal pages, under /fr or /en.
+export const legalPaths = { legal: "mentions-legales", privacy: "confidentialite" } as const;
+
 // Downloadable CVs (public/cv). Phone number redacted from the PDFs before publishing.
 export const cvs = [
   { key: "fr", href: "/cv/CV_Yoan_Pouxbories_FR.pdf", hrefLang: "fr" },

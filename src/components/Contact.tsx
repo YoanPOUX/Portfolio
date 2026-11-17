@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import type { Dictionary } from "@/lib/i18n";
-import { contact, sectionIds, socials } from "@/lib/site";
+import type { Dictionary, Locale } from "@/lib/i18n";
+import { contact, legalPaths, sectionIds, socials } from "@/lib/site";
 import { ContactForm } from "./ContactForm";
 import { Section } from "./Section";
 import { SocialLink } from "./SocialLink";
@@ -32,7 +32,7 @@ const icons: Record<(typeof socials)[number]["network"], ReactNode> = {
   ),
 };
 
-export function Contact({ dict }: { dict: Dictionary }) {
+export function Contact({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   const c = dict.contact;
   return (
     <Section id={sectionIds.contact} number="05" label={dict.sections.contact}>
@@ -64,7 +64,7 @@ export function Contact({ dict }: { dict: Dictionary }) {
             ))}
           </ul>
         </div>
-        <ContactForm t={c.form} />
+        <ContactForm t={c.form} privacyHref={`/${lang}/${legalPaths.privacy}`} />
       </div>
     </Section>
   );

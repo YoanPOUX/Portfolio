@@ -78,7 +78,8 @@
           "Reaching out to leads",
           "Conversations and qualification",
           "Managing direct message conversations",
-          "Guiding leads to the next step"
+          "Guiding leads to the next step",
+          "Setting up a CRM, scripts and processes"
         ],
         "link": "The setter work",
         "href": "#autres-activites"
@@ -428,7 +429,7 @@
         "Design and build.",
         "Test and deliver a working product."
       ],
-      "cta": "Book a 15-minute call"
+      "cta": "Contact me"
     },
     "setting": {
       "title": "Instagram",
@@ -440,7 +441,8 @@
         "Reaching out to leads.",
         "Qualifying leads.",
         "Identifying their needs and expectations.",
-        "Guiding leads to the next sales step."
+        "Guiding leads to the next sales step.",
+        "Setting up a CRM, prospecting scripts and processes when none exist yet."
       ],
       "cta": "Let's discuss it"
     }
@@ -532,6 +534,92 @@
       }
     ]
   },
+  "og": {
+    "tagline": "Freelance web and mobile developer, Instagram DM setter, and engineering student in a work-study program (Odoo ERP integration)."
+  },
+  "legal": {
+    "metaTitle": "Legal notice · Yoan Poux--Bories",
+    "title": "Legal",
+    "titleMark": "notice.",
+    "updated": "Updated on 17 November 2026",
+    "sections": [
+      {
+        "title": "Site publisher",
+        "items": [
+          "Name: {name}",
+          "Status: sole proprietor (entrepreneur individuel)",
+          "SIRET: {siret}",
+          "Address: {address}",
+          "Phone: {phone}",
+          "Email: {email}"
+        ]
+      },
+      { "title": "Publication director", "text": "{name}" },
+      { "title": "Hosting", "text": "{host}, {hostAddress}, {hostUrl}" },
+      {
+        "title": "Intellectual property",
+        "text": "The texts, photo and CVs on this site belong to {name}. Any reproduction without permission is prohibited. The Instrument Serif and Plus Jakarta Sans fonts are licensed under the SIL Open Font License, the icons come from Lucide (ISC licence)."
+      },
+      {
+        "title": "External links",
+        "text": "The site contains links to other sites (LinkedIn, GitHub, Instagram). {name} is not responsible for their content."
+      },
+      {
+        "title": "Personal data",
+        "text": "The processing of personal data is described in the privacy policy."
+      }
+    ]
+  },
+  "privacy": {
+    "metaTitle": "Privacy policy · Yoan Poux--Bories",
+    "title": "Privacy",
+    "titleMark": "policy.",
+    "updated": "Updated on 17 November 2026",
+    "sections": [
+      {
+        "title": "Data controller",
+        "text": "{name}, sole proprietor (SIRET {siret}), {address}. Contact: {email}."
+      },
+      {
+        "title": "Data collected",
+        "items": [
+          "Contact form: name, email address, type of request and message.",
+          "IP address: kept in memory for a few minutes to limit abusive form submissions.",
+          "Host technical logs (IP address, pages visited), kept by Vercel for the site's security."
+        ]
+      },
+      {
+        "title": "Purpose and legal basis",
+        "text": "This data is used only to answer your request: pre-contractual steps taken at your request, or legitimate interest in answering a message. It is neither sold nor used for advertising."
+      },
+      {
+        "title": "Recipients",
+        "items": [
+          "{name}, the only recipient of the messages.",
+          "Resend: sends the form emails.",
+          "Google (Gmail): mailbox that receives the messages.",
+          "Vercel: hosts the site."
+        ],
+        "text": "These providers may process data outside the European Union, notably in the United States, with the safeguards provided by the GDPR (standard contractual clauses or Data Privacy Framework)."
+      },
+      {
+        "title": "Retention period",
+        "text": "Messages are kept for as long as needed to handle the request, then for no more than 3 years after the last exchange."
+      },
+      {
+        "title": "Cookies and local storage",
+        "items": [
+          "\"lang\" cookie: remembers the chosen language, for 1 year.",
+          "\"theme\" local storage: remembers the chosen light or dark theme.",
+          "No advertising or audience measurement cookies. These items are needed for the site to work and do not require consent."
+        ]
+      },
+      {
+        "title": "Your rights",
+        "text": "You can access, rectify or erase your data, object to its processing, restrict its use or request its portability by writing to {email}. You can also lodge a complaint with the CNIL (French data protection authority): https://www.cnil.fr."
+      }
+    ]
+  },
   "contact": {
     "title": "Let's work",
     "titleMark": "together.",
@@ -554,11 +642,15 @@
       "sending": "Sending…",
       "success": "Thank you, your message has been sent. I'll get back to you soon.",
       "error": "Sending failed. Please try again or email me directly.",
-      "invalid": "Please check the fields: name, a valid email and a message are required."
+      "invalid": "Please check the fields: name, a valid email and a message are required.",
+      "privacyNotice": "Your data is only used to answer your request.",
+      "privacyLink": "Privacy policy"
     }
   },
   "footer": {
-    "copyright": "© 2026 Yoan Poux--Bories",
+    "owner": "Yoan Poux--Bories",
+    "legal": "Legal notice",
+    "privacy": "Privacy",
     "colophon": "Set in Instrument Serif and Plus Jakarta Sans"
   }
 }

@@ -78,7 +78,8 @@
           "Prise de contact avec les prospects",
           "Échanges et qualification",
           "Gestion des conversations en messages privés",
-          "Accompagnement des prospects vers l'étape suivante"
+          "Accompagnement des prospects vers l'étape suivante",
+          "Mise en place d'un CRM, de scripts et de process"
         ],
         "link": "L'activité de setter",
         "href": "#autres-activites"
@@ -432,7 +433,7 @@
         "Concevoir et développer.",
         "Tester et livrer un produit fonctionnel."
       ],
-      "cta": "Réserver un échange de 15 min"
+      "cta": "Me contacter"
     },
     "setting": {
       "title": "Setter",
@@ -444,7 +445,8 @@
         "Prise de contact avec les prospects.",
         "Qualification des prospects.",
         "Identification de leurs besoins et attentes.",
-        "Accompagnement des prospects vers la prochaine étape commerciale."
+        "Accompagnement des prospects vers la prochaine étape commerciale.",
+        "Mise en place d'un CRM, de scripts et de process de prospection, si aucun n'existe encore."
       ],
       "cta": "En parler"
     }
@@ -536,6 +538,92 @@
       }
     ]
   },
+  "og": {
+    "tagline": "Freelance développeur web et mobile, setter DM Instagram, et étudiant ingénieur en alternance (intégration ERP Odoo)."
+  },
+  "legal": {
+    "metaTitle": "Mentions légales · Yoan Poux--Bories",
+    "title": "Mentions",
+    "titleMark": "légales.",
+    "updated": "Mise à jour le 17 novembre 2026",
+    "sections": [
+      {
+        "title": "Éditeur du site",
+        "items": [
+          "Nom : {name}",
+          "Statut : entrepreneur individuel",
+          "SIRET : {siret}",
+          "Adresse : {address}",
+          "Téléphone : {phone}",
+          "Email : {email}"
+        ]
+      },
+      { "title": "Directeur de la publication", "text": "{name}" },
+      { "title": "Hébergement", "text": "{host}, {hostAddress}, {hostUrl}" },
+      {
+        "title": "Propriété intellectuelle",
+        "text": "Les textes, la photo et les CV de ce site appartiennent à {name}. Toute reproduction sans autorisation est interdite. Les polices Instrument Serif et Plus Jakarta Sans sont sous licence SIL Open Font License, les icônes proviennent de Lucide (licence ISC)."
+      },
+      {
+        "title": "Liens externes",
+        "text": "Le site contient des liens vers d'autres sites (LinkedIn, GitHub, Instagram). {name} n'est pas responsable de leur contenu."
+      },
+      {
+        "title": "Données personnelles",
+        "text": "Le traitement des données personnelles est décrit dans la politique de confidentialité."
+      }
+    ]
+  },
+  "privacy": {
+    "metaTitle": "Politique de confidentialité · Yoan Poux--Bories",
+    "title": "Politique de",
+    "titleMark": "confidentialité.",
+    "updated": "Mise à jour le 17 novembre 2026",
+    "sections": [
+      {
+        "title": "Responsable du traitement",
+        "text": "{name}, entrepreneur individuel (SIRET {siret}), {address}. Contact : {email}."
+      },
+      {
+        "title": "Données collectées",
+        "items": [
+          "Formulaire de contact : nom, adresse email, type de demande et message.",
+          "Adresse IP : gardée quelques minutes en mémoire pour limiter les envois abusifs du formulaire.",
+          "Journaux techniques de l'hébergeur (adresse IP, pages consultées), conservés par Vercel pour la sécurité du site."
+        ]
+      },
+      {
+        "title": "Finalité et base légale",
+        "text": "Ces données servent uniquement à répondre à votre demande : mesures précontractuelles prises à votre demande, ou intérêt légitime à répondre à un message. Elles ne sont ni vendues, ni utilisées pour de la publicité."
+      },
+      {
+        "title": "Destinataires",
+        "items": [
+          "{name}, seul destinataire des messages.",
+          "Resend : envoi des emails du formulaire.",
+          "Google (Gmail) : messagerie qui reçoit les messages.",
+          "Vercel : hébergement du site."
+        ],
+        "text": "Ces prestataires peuvent traiter des données hors de l'Union européenne, notamment aux États-Unis, avec les garanties prévues par le RGPD (clauses contractuelles types ou Data Privacy Framework)."
+      },
+      {
+        "title": "Durée de conservation",
+        "text": "Les messages sont conservés le temps de traiter la demande, puis au plus 3 ans après le dernier échange."
+      },
+      {
+        "title": "Cookies et stockage local",
+        "items": [
+          "Cookie « lang » : retient la langue choisie, pendant 1 an.",
+          "Stockage local « theme » : retient le thème clair ou sombre choisi.",
+          "Aucun cookie publicitaire ni de mesure d'audience. Ces éléments servent au fonctionnement du site et ne demandent pas de consentement."
+        ]
+      },
+      {
+        "title": "Vos droits",
+        "text": "Vous pouvez accéder à vos données, les rectifier, les effacer, vous opposer à leur traitement, en limiter l'usage ou demander leur portabilité en écrivant à {email}. Vous pouvez aussi adresser une réclamation à la CNIL : https://www.cnil.fr."
+      }
+    ]
+  },
   "contact": {
     "title": "Travaillons",
     "titleMark": "ensemble.",
@@ -558,11 +646,15 @@
       "sending": "Envoi…",
       "success": "Merci, votre message est bien parti. Je vous réponds rapidement.",
       "error": "L'envoi n'a pas fonctionné. Réessayez ou écrivez-moi directement par email.",
-      "invalid": "Vérifiez les champs : nom, email valide et message sont obligatoires."
+      "invalid": "Vérifiez les champs : nom, email valide et message sont obligatoires.",
+      "privacyNotice": "Vos données servent uniquement à répondre à votre demande.",
+      "privacyLink": "Politique de confidentialité"
     }
   },
   "footer": {
-    "copyright": "© 2026 Yoan Poux--Bories",
+    "owner": "Yoan Poux--Bories",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
     "colophon": "Composé en Instrument Serif et Plus Jakarta Sans"
   }
 }

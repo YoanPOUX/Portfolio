@@ -10,7 +10,7 @@ const fieldClass =
   "mt-2 w-full rounded-2xl border-2 border-field-border bg-field px-4 py-3 text-base text-ink";
 const labelClass = "text-sm font-bold text-ink";
 
-export function ContactForm({ t }: { t: Dictionary["contact"]["form"] }) {
+export function ContactForm({ t, privacyHref }: { t: Dictionary["contact"]["form"]; privacyHref: string }) {
   const [status, setStatus] = useState<Status>("idle");
   // Bots tend to submit instantly; the server ignores forms sent too fast.
   const startedAt = useRef(0);
@@ -73,6 +73,12 @@ export function ContactForm({ t }: { t: Dictionary["contact"]["form"] }) {
       <button type="submit" disabled={status === "sending"} className={`w-full disabled:opacity-70 ${pillClass("solid")}`}>
         {status === "sending" ? t.sending : t.submit}
       </button>
+      <p className="text-sm leading-relaxed text-muted">
+        {t.privacyNotice}{" "}
+        <a href={privacyHref} className="underline underline-offset-4 hover:text-accent">
+          {t.privacyLink}
+        </a>
+      </p>
       <p role="status" aria-live="polite" className={`min-h-6 text-[15px] ${status === "success" ? "text-ink" : "font-bold text-ink"}`}>
         {message}
       </p>

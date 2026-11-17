@@ -8,7 +8,7 @@ function remember(locale: Locale) {
 
 // Plain links on purpose: a full page load lets the browser animate the language
 // change with a cross-document view transition (see @view-transition in globals.css).
-export function LanguageSwitch({ current, label }: { current: Locale; label: string }) {
+export function LanguageSwitch({ current, path, label }: { current: Locale; path: string; label: string }) {
   return (
     <nav aria-label={label} className="flex gap-2">
       {locales.map((locale) => {
@@ -16,7 +16,7 @@ export function LanguageSwitch({ current, label }: { current: Locale; label: str
         return (
           <a
             key={locale}
-            href={`/${locale}`}
+            href={`/${locale}${path}`}
             hrefLang={locale}
             lang={locale}
             aria-current={active ? "page" : undefined}

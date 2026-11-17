@@ -3,7 +3,8 @@ import { navSections, sectionIds } from "@/lib/site";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { ThemeToggle } from "./ThemeToggle";
 
-export function Header({ dict, lang }: { dict: Dictionary; lang: Locale }) {
+// `path` is the page under the locale (e.g. "/mentions-legales"), kept when switching language.
+export function Header({ dict, lang, path = "" }: { dict: Dictionary; lang: Locale; path?: string }) {
   const links = navSections.map((key) => ({ id: sectionIds[key], label: dict.nav[key] }));
 
   return (
@@ -17,7 +18,7 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: Locale }) {
             {links.map((link) => (
               <li key={link.id}>
                 <a
-                  href={`#${link.id}`}
+                  href={`/${lang}#${link.id}`}
                   className="inline-flex min-h-11 items-center px-3 text-[15px] text-muted transition-colors hover:text-accent md:px-[13px]"
                 >
                   {link.label}
@@ -28,7 +29,7 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: Locale }) {
         </nav>
         <div className="flex gap-2 px-2 md:px-0">
           <ThemeToggle toDark={dict.a11y.themeToDark} toLight={dict.a11y.themeToLight} />
-          <LanguageSwitch current={lang} label={dict.a11y.languageSwitch} />
+          <LanguageSwitch current={lang} path={path} label={dict.a11y.languageSwitch} />
         </div>
       </div>
     </header>

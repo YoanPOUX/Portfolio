@@ -37,7 +37,7 @@ Les contenus encore marqués `[À COMPLÉTER]` ne sont pas à deviner : **pose l
 - Structure depuis la refonte du 17/11/2026 : voir la section « Refonte du 17/11/2026 » en tête de `PORTFOLIO_SPEC.md`. Les projets sont présentés dans « Parcours & projets », jamais comme une section à part.
 - Les clients des entreprises (ex. chez Gembaware) sont anonymisés (« pour un client e-commerce »). Les produits tiers (Shippingbo, Modula, Odoo) peuvent être nommés.
 - Projets exclus, à ne jamais réintroduire : Valab, factures PDF personnalisées, Empreinte (widget Manufacturing), Decoupenum, gestion immobilière, application mobile de gestion de tâches. Flutter / Dart reste dans les compétences.
-- Ne jamais afficher le téléphone ni l'adresse postale de Yoan. Cela vaut aussi pour les CV téléchargeables (`public/cv/`) : ce sont les versions « sans tel » fournies par Yoan. Tout nouveau CV doit être lu avant publication et vérifié (texte et octets du PDF) ; s'il contient le numéro, le caviarder (texte supprimé, pas masqué) ou demander une version sans. Les noms de clients peuvent rester dans les CV (choix de Yoan).
+- Ne jamais afficher le téléphone ni l'adresse postale de Yoan, sauf sur la page Mentions légales où la loi (LCEN) les impose : ils sont définis une seule fois dans `publisher` (`src/lib/site.ts`), décision de Yoan du 17/11/2026. Cela vaut aussi pour les CV téléchargeables (`public/cv/`) : ce sont les versions « sans tel » fournies par Yoan. Tout nouveau CV doit être lu avant publication et vérifié (texte et octets du PDF) ; s'il contient le numéro, le caviarder (texte supprimé, pas masqué) ou demander une version sans. Les noms de clients peuvent rester dans les CV (choix de Yoan).
 - Aucune donnée confidentielle d'entreprise.
 
 ## Langue
@@ -59,6 +59,6 @@ Les contenus encore marqués `[À COMPLÉTER]` ne sont pas à deviner : **pose l
 
 - Construis section par section dans l'ordre de la spécification.
 - Compare ton rendu aux captures de `design/` (bureau et mobile, clair et sombre) avant de dire qu'une étape est terminée.
-- Lance le build et le lint avant de dire qu'une étape est terminée.
+- Lance le lint, le build, `npm run typecheck` et `npm run test:e2e` (Playwright, utilise Chrome en local) avant de dire qu'une étape est terminée. La CI GitHub Actions (`.github/workflows/ci.yml`) les relance à chaque push.
 - Donne à Yoan des fichiers ou extraits précis avec leur chemin, pas des archives complètes.
 - Si une décision change le contenu ou le design (choix de stack, service d'envoi d'emails), demande à Yoan au lieu de trancher seul.

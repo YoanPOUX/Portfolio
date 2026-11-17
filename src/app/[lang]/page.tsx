@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import { Contact } from "@/components/Contact";
-import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { RevealObserver } from "@/components/RevealObserver";
+import { PageShell } from "@/components/PageShell";
 import { Freelance, Journey, Skills, SoftSkills, WhatIDo } from "@/components/Sections";
 import { getDictionary, hasLocale } from "@/lib/i18n";
 
@@ -12,32 +11,14 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   const dict = getDictionary(lang);
 
   return (
-    <>
-      <a
-        href="#contenu"
-        className="sr-only rounded-full bg-btn px-5 py-3 font-bold text-on-violet focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50"
-      >
-        {dict.a11y.skipToContent}
-      </a>
-      <div className="mx-auto max-w-[1176px] px-5 md:px-4">
-        <Header dict={dict} lang={lang} />
-        <main id="contenu">
-          <Hero dict={dict} />
-          <WhatIDo dict={dict} />
-          <Journey dict={dict} />
-          <Freelance dict={dict} />
-          <Skills dict={dict} />
-          <SoftSkills dict={dict} />
-          <Contact dict={dict} />
-          <RevealObserver />
-        </main>
-      </div>
-      <footer className="mt-24 border-t border-rule">
-        <div className="mx-auto flex max-w-[1176px] flex-col gap-2 px-5 py-8 text-sm text-muted md:flex-row md:justify-between md:px-4">
-          <p>{dict.footer.copyright}</p>
-          <p>{dict.footer.colophon}</p>
-        </div>
-      </footer>
-    </>
+    <PageShell dict={dict} lang={lang}>
+      <Hero dict={dict} />
+      <WhatIDo dict={dict} />
+      <Journey dict={dict} />
+      <Freelance dict={dict} />
+      <Skills dict={dict} />
+      <SoftSkills dict={dict} />
+      <Contact dict={dict} lang={lang} />
+    </PageShell>
   );
 }

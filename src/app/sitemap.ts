@@ -1,10 +1,13 @@
 import type { MetadataRoute } from "next";
-import { siteUrl } from "@/lib/site";
+import { legalPaths, siteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const languages = { fr: `${siteUrl}/fr`, en: `${siteUrl}/en` };
-  return [
-    { url: `${siteUrl}/fr`, alternates: { languages } },
-    { url: `${siteUrl}/en`, alternates: { languages } },
-  ];
+  // Home page, then the legal pages, each in French and English.
+  return ["", `/${legalPaths.legal}`, `/${legalPaths.privacy}`].flatMap((path) => {
+    const languages = { fr: `${siteUrl}/fr${path}`, en: `${siteUrl}/en${path}` };
+    return [
+      { url: languages.fr, alternates: { languages } },
+      { url: languages.en, alternates: { languages } },
+    ];
+  });
 }
