@@ -70,7 +70,8 @@ export default async function RootLayout({
       </head>
       <body>
         {children}
-        <Analytics />
+        {/* The script is served by Vercel only: skip it elsewhere (CI, local) to avoid a 404. */}
+        {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>
   );
