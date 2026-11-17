@@ -45,7 +45,6 @@ export async function generateMetadata({
       description: meta.description,
       locale: meta.ogLocale,
       siteName: "Yoan Poux--Bories",
-      images: [{ url: "/photo.jpg", alt: "Yoan Poux--Bories" }],
     },
   };
 }
